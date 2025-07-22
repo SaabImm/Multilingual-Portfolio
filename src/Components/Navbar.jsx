@@ -14,14 +14,12 @@ export default function Navbar(){
                     <div>
                         <a href="#projects"> Projects </a>
                     </div>
-                    
+
                     <div> Skills </div>
                     <div> About </div>
                     <div> Contact Me</div>
                 </div>
             </div>
-
-
             <Outlet />
         </>
     )
