@@ -8,9 +8,11 @@ export default function App() {
 
   return (
     <>
-      <Navbar/>
-      <Home/>
-      <Projects/>
+      
+        <Navbar/>
+        <section id='home'> <Home /> </section>
+        <section id='projects'> <Projects /> </section>
+
     </>
   )
 }

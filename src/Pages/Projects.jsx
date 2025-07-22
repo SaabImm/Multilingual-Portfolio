@@ -3,8 +3,8 @@ import ProjectItem from "../Components/Project-item";
 export default function Projects(){
     return(
         <>
-            <div>
-                <h1 className="font-[Aclonica] font-normal text-4xl w-max m-auto" > 
+            <div className="h-screen">
+                <h1 className="font-[Aclonica] font-normal text-3xl w-max m-auto my-20" > 
                     Projects 
                 </h1>
                 <ProjectItem/>

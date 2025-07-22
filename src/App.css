@@ -2,6 +2,7 @@
 
 
 html{
+    scroll-behavior: smooth;
     border: solid 5px #ff0000;
     background-color: black;
     color: white;
