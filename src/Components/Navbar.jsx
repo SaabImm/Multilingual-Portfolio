@@ -15,7 +15,10 @@ export default function Navbar(){
                         <a href="#projects"> Projects </a>
                     </div>
 
-                    <div> Skills </div>
+                     <div>
+                        <a href="#skills"> Skills </a>
+                    </div>
+
                     <div> About </div>
                     <div> Contact Me</div>
                 </div>

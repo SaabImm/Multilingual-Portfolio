@@ -20,7 +20,6 @@ export default function ProjectItem(props){
                                 <div className='font-[Aclonica] text-[22px] font-bold text-center'> {props.entry.title}</div>
                                 <div> {props.entry.text}</div>
                             </div>
-
                             <IconsThing table={props.entry.techs} />          
 
                         </div>
