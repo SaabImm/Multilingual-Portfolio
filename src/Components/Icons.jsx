@@ -14,17 +14,17 @@ export default function IconsThing({table}){
         { table.map((ellm) => {
             switch (ellm) {
                 case 'HTML':
-                    return <li key={ellm}> <FaHtml5 className='text-4xl'/> HTML </li>;
+                    return <li key={ellm}> <FaHtml5 className='text-6xl'/> HTML </li>;
                 case 'CSS':
-                    return <li key={ellm}> <FaCss3Alt className='text-4xl' /> CSS </li> ;
+                    return <li key={ellm}> <FaCss3Alt className='text-6xl' /> CSS </li> ;
                 case 'JavaScript':
-                    return  <li key={ellm}> <IoLogoJavascript className='text-4xl' /> JS </li> ;
+                    return  <li key={ellm}> <IoLogoJavascript className='text-6xl' /> JS </li> ;
                 case 'Responsive':
-                    return <li key={ellm}> <MdOutlineFitScreen  className='text-4xl' /> Resp </li> ;
+                    return <li key={ellm}> <MdOutlineFitScreen  className='text-6xl' /> Resp </li> ;
                 case 'React':
-                    return <li key={ellm}> <FaReact  className='text-4xl' /> React </li> ;
+                    return <li key={ellm}> <FaReact  className='text-6xl' /> React </li> ;
                 case "Tailwind":
-                    return <li key={ellm}> <RiTailwindCssFill className='text-4xl' /> Tailwind </li> ;
+                    return <li key={ellm}> <RiTailwindCssFill className='text-6xl' /> Tailwind </li> ;
 
                 
                 default:

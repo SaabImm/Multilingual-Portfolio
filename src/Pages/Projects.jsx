@@ -9,7 +9,7 @@ export default function Projects(){
 
     const dataArray=Data.map((item)=>{
       
-      return <ProjectItem
+      return <ProjectItem 
               key={item.id} 
               entry={item} //Object Prop
       />
@@ -17,8 +17,8 @@ export default function Projects(){
 
     return(
         <>
-            <div className="min-h-screen ">
-                <h1 className="font-[Aclonica] font-normal text-3xl w-max m-auto my-20" > 
+            <div className="min-h-screen">
+                <h1 className="font-[Aclonica] font-normal text-3xl w-max m-auto my-20 border-b-5 border-[#ff0000]" > 
                     Projects 
                 </h1>
 
