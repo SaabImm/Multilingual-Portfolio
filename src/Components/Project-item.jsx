@@ -1,33 +1,34 @@
-import SazPic from '../assets/Imgs/saz.PNG'
+
 import { FaHtml5, FaCss3Alt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { MdOutlineFitScreen } from "react-icons/md";
+import IconsThing  from "./Icons";
 
-export default function ProjectItem(){
+import saz3 from '../assets/Imgs/saz3.PNG'
+
+export default function ProjectItem(props){
+
     return(
         <>
-            <div className="flex flex-row justify-between max-w-7/10 m-auto ">
-                <div> 
-                    <img src={SazPic} />
+            <div className="flex flex-row justify-between items-center max-w-7/10 m-auto my-[150px]">
+                <div className=" w-[670px] min-h-[250px] border-2 "> 
+                    <img src={props.entry.img} />
                 </div>
                     <div className=" p-20 "> 
                             <div className=' max-w-[290px] flex flex-col gap-y-10' >
                             <div className="discription font-[Montserrat] text-[16px] font-light">
-                                <div className='font-[Aclonica] text-[22px] font-bold text-center'> Landing Page </div>
-                                <div> Landing pour une agence de voyage, conçue avec HTML CSS et JavaScript </div>
+                                <div className='font-[Aclonica] text-[22px] font-bold text-center'> {props.entry.title}</div>
+                                <div> {props.entry.text}</div>
                             </div>
 
-                                <div>
-                                    <ul className='grid grid-cols-2 gap-x-8 gap-y-4 justify-items-center content-center  text-center font-extralight'>
-                                        <li > <FaHtml5 className='text-4xl'/> HTML </li>
-                                        <li> <FaCss3Alt className=' text-4xl' /> CSS </li>
-                                        <li> <IoLogoJavascript className=' text-4xl' /> JS </li>  
-                                        <li> <MdOutlineFitScreen  className=' text-4xl' /> Resp </li>   
-                                    </ul>
-                                </div>
+                            <IconsThing table={props.entry.techs} />          
+
                         </div>
                     </div>
             </div>
+
+            
+
         </>
     )
 }
