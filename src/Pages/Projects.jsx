@@ -1,9 +1,6 @@
 import React from "react";
 import ProjectItem from "../Components/Project-item";
-
 import Data from '../Data'
-
-
 
 export default function Projects(){
 
