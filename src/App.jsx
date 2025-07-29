@@ -10,7 +10,7 @@ export default function App() {
 
   return (
     <>
-      <div className='dark:bg-white dark:text-black'>
+      <div className='dark:bg-white dark:text-black border-[5px] border-[#ff0000]'>
         <Navbar />
         <section id='home' > <Home /> </section>
         <section id='projects'> <Projects  /> </section>

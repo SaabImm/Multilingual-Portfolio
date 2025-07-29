@@ -1,7 +1,3 @@
-
-import { FaHtml5, FaCss3Alt } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
-import { MdOutlineFitScreen } from "react-icons/md";
 import IconsThing  from "./Icons";
 
 
@@ -9,13 +5,13 @@ export default function ProjectItem(props){
 
     return(
         <>
-            <div className="flex flex-col lg:flex-row justify-between items-center max-w-7/10 m-auto my-[150px]">
-                <div className="w-full lg:w-[670px] min-h-[250px "> 
+            <div className="flex flex-col lg:flex-row justify-between items-center w-2/3 m-auto     my-[150px]">
+                <div className="w-full lg:w-[670px] "> 
                     <img src={props.entry.img} />
                 </div>
 
-                <div className=" p-20 "> 
-                    <div className=' max-w-[290px] flex flex-col gap-y-10' >
+                <div className="lg:p-20 p-10 lg:w-1/2"> 
+                    <div className=' flex flex-col gap-y-10' >
                         <div className="discription font-[Montserrat] text-[16px] font-light">
                             <div className='font-[Aclonica] text-[22px] font-bold text-center'> {props.entry.title}</div>
                             <div> {props.entry.text}</div>
