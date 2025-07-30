@@ -7,30 +7,52 @@
     "contact": "Contact Me"
   },
   "home": {
-    "title": "Bessa Sabrina Front-End Web Developer",
-    "intro": "I'm a web developer based in Algeria."
+    "title": "Bessa Sabrina Front-End Web Developer"
   },
   "about": {
     "title": "About Me",
-    "bio": "I love building beautiful user interfaces."
+    "bio": "Self-taught front-end developer, passionate about modern web development, with a solid academic background in mathematics, cryptography, and logic. My rigorous approach to problem-solving comes from my university experience, while my curiosity and creativity are reflected in my web projects. I have strong command of web languages (HTML, CSS, and JavaScript ES6+), along with in-depth knowledge of native CSS and DOM manipulation. My continuous learning has allowed me to progress rapidly in React, which I continue to improve through hands-on projects. With several components and complete projects already built, I am motivated, independent, persistent, and always ready to take on new challenges."
   },
   "contact": {
     "title": "Contact Me",
-    "email": "Send me an email"
+    "text": "Thanks for visiting my site, if you find me to be a good fit for your team then you will find me on : "
   },
   "projects": {
     "title": "Projects",
-    "project1": {
-        "title": "Page d’atterrissage",
-        "description": "Landing pour une agence de voyage, conçue avec HTML CSS et JavaScript"
-    },
+    "projectItems": [
+      {
+        "id": 1,
+        "title": "Landing Page",
+        "img" : "../src/assets/Imgs/saz.PNG",
+        "description": "A fully responsive and modern landing page built using HTML, CSS, and vanilla JavaScript.",
+        "techs": ["HTML", "JavaScript", "CSS", "Responsive"]
+      },
 
-    "project2" : {
-        "title": "Portfolio",
-        "description": "Mon portfolio a été conçu avec React et Tailwind CSS, etc etc.."
-    }
-  },
+     {
+        "id": 2,
+        "title": "Miltilingual Portfolio",
+        "img": "../src/assets/Imgs/Portfolio.PNG",
+        "description": "My personal portfolio built with React and Tailwind CSS, featuring dark mode, responsive design, and reactive multilingual support.",
+        "techs": ["React", "Tailwind", "Responsive"]
+      },
+
+      {
+        "id": 3,
+        "title": "To-do App",
+        "img": "../src/assets/Imgs/Portfolio.PNG",
+        "description": "This to-do app was built using React Hooks such as useRef, useReducer, and useContext. It includes features like adding, editing, deleting tasks, and marking them as completed.",
+        "techs": ["React", "Tailwind", "ReactHooks"]
+      },
+
+      {
+        "id": 4,
+        "title": "e-commerce app",
+        "img": "../src/assets/Imgs/Portfolio.PNG",
+        "description": "An e-commerce product page built with React, featuring dynamic product fetching from the DummyJSON API, a functional shopping cart, and a clean, responsive UI.",
+        "techs": ["React", "Tailwind", "dummyJSON API"]
+      }
+]},
     "skills": {
-    "title": "Compétences"
+      "title": "Skills"
   }
 }

@@ -1,16 +1,18 @@
-import React from "react";
 import ProjectItem from "../Components/Project-item";
-import Data from '../Data'
+import { useLangueContext } from '../Context/translation'
 
 export default function Projects({lang}){
+    const {t} = useLangueContext();
+    const itemsArray=t.projects.projectItems.map((item) =>{
 
-    const dataArray=Data.map((item)=>{
-      
-      return <ProjectItem 
-              key={item.id} 
-              entry={item} //Object Prop
+        return <ProjectItem
+            key={item.id} 
+            lang={t}
+            item={item} 
       />
-  }) 
+})
+
+
 
     return(
         <>
@@ -20,7 +22,7 @@ export default function Projects({lang}){
                 </h1>
 
                 <div>
-                    {dataArray}
+                    {itemsArray}
                 </div>
             </div>
 

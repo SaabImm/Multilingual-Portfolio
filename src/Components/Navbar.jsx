@@ -50,8 +50,12 @@ export default function Navbar({lang}){
                         <a href="#skills"> {lang.navbar.skills} </a>
                     </div>
 
-                    <div> {lang.navbar.about}  </div>
-                    <div> {lang.navbar.contact}</div>
+                    <div> 
+                        <a href="#about"> {lang.navbar.about} </a>  
+                    </div>
+                    <div> 
+                        <a href="#contact"> {lang.navbar.contact}</a> 
+                    </div>
 
                     
                     <button onClick={toggleDark}>

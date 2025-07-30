@@ -7,30 +7,51 @@
     "contact": "Contactez "
   },
   "home": {
-    "title": "Welcome to My Portfolio",
-    "intro": "I'm a web developer based in Algeria."
+    "title": "Bessa Sabrina Developpeuse Front-end"
   },
   "about": {
     "title": "About Me",
-    "bio": "I love building beautiful user interfaces."
+    "bio": "Développeuse front-end autodidacte, passionnée par le développement web moderne, avec un parcours académique solide en mathématiques, cryptographie et logique. Mon approche rigoureuse des problèmes vient de mon expérience universitaire, tandis que ma curiosité et ma créativité se reflètent dans mes projets web. Je maîtrise les langages du web (HTML, CSS, JavaScript ES6+) et je possède une connaissance approfondie de CSS natif ainsi que de la manipulation du DOM. Mon apprentissage continu m’a permis de progresser rapidement en React que je continue de perfectionner à travers des projets concrets. Avec déjà plusieurs composants et projets réalisés. Je suis motivée, autonome, persévérante, et toujours prête à relever de nouveaux défis."
   },
   "contact": {
-    "title": "Contact Me",
-    "email": "Send me an email"
+    "title": "Contactez Moi",
+    "text": "Merci d'avoir visité mon site web, si vous me jugez digne de votre equipe, vous me trouverez sur :"
   },
-    "projects": {
+  "projects": {
     "title": "Projets",
-    "project1": {
+    "projectItems":[ 
+      {
+        "id": 0,
         "title": "Page d’atterrissage",
-        "description": "Landing pour une agence de voyage, conçue avec HTML CSS et JavaScript"
-    },
-
-    "project2" : {
+        "img" : "../src/assets/Imgs/saz.PNG",
+        "description": "Une page d’atterrissage moderne et entièrement responsive, développée en HTML, CSS et JavaScript pur.",
+        "techs": ["HTML", "JavaScript", "CSS", "Responsive"]
+      },
+      {
+        "id": 1,
         "title": "Portfolio",
-        "description": "Mon portfolio a été conçu avec React et Tailwind CSS, etc etc.."
-    }
-  },
-    "skills": {
+        "img": "../src/assets/Imgs/Portfolio.PNG",
+        "description": "Mon portfolio personnel réalisé avec React et Tailwind CSS, avec mode sombre, design responsive et prise en charge multilingue réactive.",
+        "techs": ["React", "Tailwind", "Responsive"]
+      },
+      {
+        "id": 2,
+        "title": "To-do App",
+        "img": "../src/assets/Imgs/Portfolio.PNG",
+        "description": "Cette application de tâches a été développée avec des Hooks React comme useRef, useReducer et useContext. Elle permet d’ajouter, modifier, supprimer des tâches, et de les marquer comme terminées.",
+        "techs": ["React", "Tailwind", "ReactHooks"]
+      },
+
+      {
+        "id": 3,
+        "title": "Site e-commerce",
+        "img": "../src/assets/Imgs/Portfolio.PNG",
+        "description": "Une page produit e-commerce développée avec React, intégrant une récupération dynamique des produits via l’API DummyJSON, un panier fonctionnel et une interface propre et responsive.",
+        "techs": ["React", "Tailwind", "dummyJSON"]
+      }
+]},
+
+  "skills": {
     "title": "Compétences"
   }
 }
