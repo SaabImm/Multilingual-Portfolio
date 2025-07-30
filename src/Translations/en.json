@@ -1,0 +1,36 @@
+{
+  "navbar": {
+    "home": "Home",
+    "projects": "Projects",
+    "skills": "Skills",
+    "about": "About Me",
+    "contact": "Contact Me"
+  },
+  "home": {
+    "title": "Bessa Sabrina Front-End Web Developer",
+    "intro": "I'm a web developer based in Algeria."
+  },
+  "about": {
+    "title": "About Me",
+    "bio": "I love building beautiful user interfaces."
+  },
+  "contact": {
+    "title": "Contact Me",
+    "email": "Send me an email"
+  },
+  "projects": {
+    "title": "Projects",
+    "project1": {
+        "title": "Page d’atterrissage",
+        "description": "Landing pour une agence de voyage, conçue avec HTML CSS et JavaScript"
+    },
+
+    "project2" : {
+        "title": "Portfolio",
+        "description": "Mon portfolio a été conçu avec React et Tailwind CSS, etc etc.."
+    }
+  },
+    "skills": {
+    "title": "Compétences"
+  }
+}

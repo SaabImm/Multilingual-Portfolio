@@ -1,0 +1,36 @@
+{
+  "navbar": {
+    "home": "Accueil",
+    "projects": "Projets",
+    "skills": "Compétences",
+    "about": "A propos",
+    "contact": "Contactez "
+  },
+  "home": {
+    "title": "Welcome to My Portfolio",
+    "intro": "I'm a web developer based in Algeria."
+  },
+  "about": {
+    "title": "About Me",
+    "bio": "I love building beautiful user interfaces."
+  },
+  "contact": {
+    "title": "Contact Me",
+    "email": "Send me an email"
+  },
+    "projects": {
+    "title": "Projets",
+    "project1": {
+        "title": "Page d’atterrissage",
+        "description": "Landing pour une agence de voyage, conçue avec HTML CSS et JavaScript"
+    },
+
+    "project2" : {
+        "title": "Portfolio",
+        "description": "Mon portfolio a été conçu avec React et Tailwind CSS, etc etc.."
+    }
+  },
+    "skills": {
+    "title": "Compétences"
+  }
+}

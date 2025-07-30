@@ -1,18 +1,17 @@
 import { useState } from "react";
 import { CgDarkMode } from "react-icons/cg";
-import {useDarkMode } from '../Context/Dark-mode'
+import { useDarkMode } from '../Context/Dark-mode'
+import { useLangueContext } from '../Context/translation'
 import { IoMenu } from "react-icons/io5";
 
-export default function Navbar(){
+export default function Navbar({lang}){
 
     const { isDark, toggleDark } = useDarkMode(); 
-
+    const { language, toggleLang} = useLangueContext();
     const [open, setOpen]=  useState(false)
-
     const toggleMenu= ()=>{
         setOpen(prev => !prev)
     }
-
     
     return(
         <>
@@ -40,23 +39,27 @@ export default function Navbar(){
 
 
                     <div >  
-                        <a href="#home"> Home </a>
+                        <a href="#home"> { lang.navbar.home } </a>
                     </div>
 
                     <div>
-                        <a href="#projects"> Projects </a>
+                        <a href="#projects"> {lang.navbar.projects} </a>
                     </div>
 
                      <div>
-                        <a href="#skills"> Skills </a>
+                        <a href="#skills"> {lang.navbar.skills} </a>
                     </div>
 
-                    <div> About  </div>
-                    <div> Contact Me</div>
+                    <div> {lang.navbar.about}  </div>
+                    <div> {lang.navbar.contact}</div>
 
                     
                     <button onClick={toggleDark}>
                         <i className='text-2xl'> <CgDarkMode /> </i>
+                    </button>
+
+                    <button onClick={toggleLang}>
+                        <span> {language}</span>
                     </button>
 
 

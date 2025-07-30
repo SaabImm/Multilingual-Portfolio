@@ -5,13 +5,13 @@ import { FaReact } from "react-icons/fa6";
 import { RiTailwindCssFill } from "react-icons/ri";
 
 
-export default function Skills() {
+export default function Skills({lang}) {
     
     return (
         <>
             <div className="min-h-screen">
                 <h1 className=" font-[Aclonica] font-normal text-3xl w-max m-auto my-20 border-b-4 border-[#ff0000]" > 
-                    Skills 
+                    {lang.skills.title}
                 </h1>
 
                 <ul className=' grid grid-cols-2 gap-8 justify-items-center content-center text-center font-extralight w-1/3 m-auto text-sm lg:grid-cols-3'>
