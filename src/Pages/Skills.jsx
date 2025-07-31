@@ -15,15 +15,15 @@ export default function Skills({lang}) {
                 </h1>
 
                 <ul className=' grid grid-cols-2 gap-8 justify-items-center content-center text-center font-extralight w-1/3 m-auto text-sm lg:grid-cols-3'>
-                    <li> <FaHtml5 className='text-6xl'/> HTML </li>
-                    <li> <FaCss3Alt className='text-6xl'/> CSS </li> 
-                    <li> <IoLogoJavascript className='text-6xl'/> JS </li>
-                    <li> <MdOutlineFitScreen className='text-6xl'/> Resp </li>
-                    <li> <RiTailwindCssFill className='text-6xl'/> Tailwind </li>
-                    <li> <FaGitAlt  className='text-6xl'/> Git </li>
-                    <li> <FaGithubAlt  className='text-6xl'/> GitHub </li>
-                    <li> <FaSass  className='text-6xl'/> Sass </li>
-                    <li> <FaBootstrap   className='text-6xl'/> Boostrap </li>
+                    <li> <FaHtml5 className='text-6xl m-auto my-2'/> HTML</li>
+                    <li> <FaCss3Alt className='text-6xl m-auto my-2'/> CSS </li> 
+                    <li> <IoLogoJavascript className='text-6xl m-auto my-2'/> JavaScript + ES6 </li>
+                    <li> <MdOutlineFitScreen className='text-6xl  m-auto my-2'/>  Responsive Design </li>
+                    <li> <RiTailwindCssFill className='text-6xl m-auto my-2'/> TailwindCSS </li>
+                    <li> <FaGitAlt  className='text-6xl m-auto my-2'/> Git </li>
+                    <li> <FaGithubAlt  className='text-6xl m-auto my-2'/> GitHub </li>
+                    <li> <FaSass  className='text-6xl m-auto my-2'/> Sass </li>
+                    <li> <FaBootstrap   className='text-6xl m-auto my-2'/> Boostrap </li>
                 </ul>
 
                 

@@ -7,7 +7,9 @@
     "contact": "Contact Me"
   },
   "home": {
-    "title": "Bessa Sabrina Front-End Web Developer"
+    "title1": "Bessa Sabrina",
+    "title2" : "Front-End",
+    "title3" : "Web Developer"
   },
   "about": {
     "title": "About Me",

@@ -16,8 +16,15 @@ export default function Navbar({lang}){
     return(
         <>
             <div className='flex font-[Aclonica] flex-row justify-between items-center px-10 font-normal h-16'> 
-                <div className="flex flex-row lg:justify-between justify-around items-center w-full">
+                <div className="flex flex-row lg:justify-start justify-around items-center w-full gap-10">
                     <div className='text-3xl'> B.S </div> 
+                    <button onClick={toggleDark}>
+                        <i className='text-2xl'> <CgDarkMode /> </i>
+                    </button>
+
+                    <button onClick={toggleLang}>
+                        <span> en / fr</span>
+                    </button>
 
                     <div className="relative inline-block text-left lg:hidden left-0">
                         <button onClick={toggleMenu}>
@@ -56,15 +63,6 @@ export default function Navbar({lang}){
                     <div> 
                         <a href="#contact"> {lang.navbar.contact}</a> 
                     </div>
-
-                    
-                    <button onClick={toggleDark}>
-                        <i className='text-2xl'> <CgDarkMode /> </i>
-                    </button>
-
-                    <button onClick={toggleLang}>
-                        <span> {language}</span>
-                    </button>
 
 
 

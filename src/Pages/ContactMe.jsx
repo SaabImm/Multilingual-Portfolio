@@ -13,7 +13,7 @@ export default function Contact({lang}){
                 {lang.contact.text}
             </div>
 
-            <ul className=' grid grid-cols-3 gap-8 justify-items-center content-center text-center font-extralight w-1/3 m-auto text-sm'>
+            <ul className=' grid grid-cols-3 gap-8 justify-items-center content-center text-center font-extralight lg:w-1/3 w-full m-auto text-sm'>
                 <li> <a href="https://www.fiverr.com/s/qDrvwjZ" target="_blank" rel="noopener noreferrer"> <SiFiverr className='text-5xl'/> Fiver </a> </li>
                 <li> <a href="https://www.linkedin.com/in/saab-imm-4697a8320" target="_blank" rel="noopener noreferrer"> <FaLinkedin className='text-5xl'/> LinkedIn </a></li> 
                 <li> <a href="https://github.com/SaabImm" target="_blank" rel="noopener noreferrer"> <FaGithubAlt  className='text-5xl'/> GitHub </a> </li>

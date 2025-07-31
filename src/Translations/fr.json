@@ -4,10 +4,12 @@
     "projects": "Projets",
     "skills": "Compétences",
     "about": "A propos",
-    "contact": "Contactez "
+    "contact": "Contact "
   },
   "home": {
-    "title": "Bessa Sabrina Developpeuse Front-end"
+    "title1": "Bessa Sabrina",
+    "title2" : "Developpeuse Web",
+    "title3" : "Front-End"
   },
   "about": {
     "title": "About Me",
