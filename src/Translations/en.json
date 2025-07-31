@@ -25,7 +25,7 @@
       {
         "id": 1,
         "title": "Landing Page",
-        "img" : "../src/assets/Imgs/saz.PNG",
+        "img" : "/public/saz.PNG",
         "description": "A fully responsive and modern landing page built using HTML, CSS, and vanilla JavaScript.",
         "techs": ["HTML", "JavaScript", "CSS", "Responsive"]
       },
@@ -33,7 +33,7 @@
      {
         "id": 2,
         "title": "Miltilingual Portfolio",
-        "img": "../src/assets/Imgs/Portfolio.PNG",
+        "img": "/public/Portfolio.PNG",
         "description": "My personal portfolio built with React and Tailwind CSS, featuring dark mode, responsive design, and reactive multilingual support.",
         "techs": ["React", "Tailwind", "Responsive"]
       },
