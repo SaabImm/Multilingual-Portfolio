@@ -25,7 +25,7 @@
       {
         "id": 1,
         "title": "Landing Page",
-        "img" : "/public/saz.PNG",
+        "img" : "/assets/saz.PNG", 
         "description": "A fully responsive and modern landing page built using HTML, CSS, and vanilla JavaScript.",
         "techs": ["HTML", "JavaScript", "CSS", "Responsive"]
       },
@@ -33,7 +33,7 @@
      {
         "id": 2,
         "title": "Miltilingual Portfolio",
-        "img": "/public/Portfolio.PNG",
+        "img": "/assets/Portfolio.PNG",
         "description": "My personal portfolio built with React and Tailwind CSS, featuring dark mode, responsive design, and reactive multilingual support.",
         "techs": ["React", "Tailwind", "Responsive"]
       },
@@ -41,17 +41,17 @@
       {
         "id": 3,
         "title": "To-do App",
-        "img": "../src/assets/Imgs/Portfolio.PNG",
+        "img": "/assets/Portfolio.PNG",
         "description": "This to-do app was built using React Hooks such as useRef, useReducer, and useContext. It includes features like adding, editing, deleting tasks, and marking them as completed.",
-        "techs": ["React", "Tailwind", "ReactHooks"]
+        "techs": ["React", "Tailwind"]
       },
 
       {
         "id": 4,
         "title": "e-commerce app",
-        "img": "../src/assets/Imgs/Portfolio.PNG",
+        "img": "/assets/Portfolio.PNG",
         "description": "An e-commerce product page built with React, featuring dynamic product fetching from the DummyJSON API, a functional shopping cart, and a clean, responsive UI.",
-        "techs": ["React", "Tailwind", "dummyJSON API"]
+        "techs": ["React", "Tailwind"]
       }
 ]},
     "skills": {

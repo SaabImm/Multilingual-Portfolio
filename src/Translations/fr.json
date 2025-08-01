@@ -25,31 +25,31 @@
       {
         "id": 0,
         "title": "Page d’atterrissage",
-        "img" : "../src/assets/Imgs/saz.PNG",
+        "img" : "/assets/Portfolio.PNG",
         "description": "Une page d’atterrissage moderne et entièrement responsive, développée en HTML, CSS et JavaScript pur.",
         "techs": ["HTML", "JavaScript", "CSS", "Responsive"]
       },
       {
         "id": 1,
         "title": "Portfolio",
-        "img": "../src/assets/Imgs/Portfolio.PNG",
+        "img": "/assets/saz.PNG",
         "description": "Mon portfolio personnel réalisé avec React et Tailwind CSS, avec mode sombre, design responsive et prise en charge multilingue réactive.",
         "techs": ["React", "Tailwind", "Responsive"]
       },
       {
         "id": 2,
         "title": "To-do App",
-        "img": "../src/assets/Imgs/Portfolio.PNG",
+        "img": "/assets/Portfolio.PNG",
         "description": "Cette application de tâches a été développée avec des Hooks React comme useRef, useReducer et useContext. Elle permet d’ajouter, modifier, supprimer des tâches, et de les marquer comme terminées.",
-        "techs": ["React", "Tailwind", "ReactHooks"]
+        "techs": ["React", "Tailwind"]
       },
 
       {
         "id": 3,
         "title": "Site e-commerce",
-        "img": "../src/assets/Imgs/Portfolio.PNG",
+        "img": "/assets/Portfolio.PNG",
         "description": "Une page produit e-commerce développée avec React, intégrant une récupération dynamique des produits via l’API DummyJSON, un panier fonctionnel et une interface propre et responsive.",
-        "techs": ["React", "Tailwind", "dummyJSON"]
+        "techs": ["React", "Tailwind"]
       }
 ]},
 
