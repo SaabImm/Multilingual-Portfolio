@@ -25,8 +25,6 @@ export function TranslationProvider({children}){
     }
   }, [language]);
   
-    console.log(t)
-
     return(
     <LanguageContext.Provider value={{ language,toggleLang,t }}>
       {children}

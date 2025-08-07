@@ -8,8 +8,8 @@ export default function About({lang}){
                 {lang.about.title} 
             </h1>
             <div className=" flex md:flex-row flex-col justify-between items-center gap-20 ">
-                <div className= "  basis-1/3"> <img src={image} alt="Sabrina Avatar" loading="lazy"/></div>
-                <div className="  basis-2/3 font-[Montserrat] text-[16px] font-light text-center">
+                <div className= " basis-1/3"> <img src={image} alt="Sabrina Avatar" loading="lazy"/></div>
+                <div className="  basis-2/3 font-[Montserrat] text-sm font-light text-center">
                     {lang.about.bio}
                 </div>
             </div>
