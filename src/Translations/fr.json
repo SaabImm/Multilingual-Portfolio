@@ -4,19 +4,19 @@
     "projects": "Projets",
     "skills": "Compétences",
     "about": "A propos",
-    "contact": "Contact "
+    "contact": "Contact"
   },
   "home": {
     "title1": "Bessa Sabrina",
-    "title2" : "Developpeuse Web",
+    "title2" : "Developpeur Web",
     "title3" : "Front-End"
   },
   "about": {
-    "title": "About Me",
-    "bio": "Développeuse front-end autodidacte, passionnée par le développement web moderne, avec un parcours académique solide en mathématiques, cryptographie et logique. Mon approche rigoureuse des problèmes vient de mon expérience universitaire, tandis que ma curiosité et ma créativité se reflètent dans mes projets web. Je maîtrise les langages du web (HTML, CSS, JavaScript ES6+) et je possède une connaissance approfondie de CSS natif ainsi que de la manipulation du DOM. Mon apprentissage continu m’a permis de progresser rapidement en React que je continue de perfectionner à travers des projets concrets. Avec déjà plusieurs composants et projets réalisés. Je suis motivée, autonome, persévérante, et toujours prête à relever de nouveaux défis."
+    "title": "A propos",
+    "bio": "Développeur front-end autodidacte, passionnée par le développement web moderne, avec un parcours académique solide en mathématiques, cryptographie et logique. Mon approche rigoureuse des problèmes vient de mon expérience universitaire, tandis que ma curiosité et ma créativité se reflètent dans mes projets web. Je maîtrise les langages du web (HTML, CSS, JavaScript ES6+) et je possède une connaissance approfondie de CSS natif ainsi que de la manipulation du DOM. Mon apprentissage continu m’a permis de progresser rapidement en React que je continue de perfectionner à travers des projets concrets. Avec déjà plusieurs composants et projets réalisés. Je suis motivée, autonome, persévérante, et toujours prête à relever de nouveaux défis."
   },
   "contact": {
-    "title": "Contactez Moi",
+    "title": "Contact",
     "text": "Merci d'avoir visité mon site web, si vous me jugez digne de votre equipe, vous me trouverez sur :"
   },
   "projects": {

@@ -5,15 +5,14 @@ import Projects from './Pages/Projects'
 import Skills from './Pages/Skills'
 import About from './Pages/AboutMe'
 import Contact from './Pages/ContactMe'
-import { useState, useEffect } from "react";
 import { useLangueContext } from './Context/translation'
 
 
 export default function App() {
-  const { language, toggleLang, t } = useLangueContext();
+  const { t } = useLangueContext();
   return (
     <>
-      <div className='dark:bg-white dark:text-black border-[5px] border-[#ff0000]'>
+      <div className='dark:bg-white dark:text-black transition-colors duration-500 ease-in-out'>
         <Navbar  lang={t}/>
         <section id='home' className='py-3'> <Home lang={t} /> </section>
         <section id='projects' className='py-3'> <Projects lang={t} /> </section>

@@ -3,8 +3,8 @@
     "home": "Home",
     "projects": "Projects",
     "skills": "Skills",
-    "about": "About Me",
-    "contact": "Contact Me"
+    "about": "About",
+    "contact": "Contact"
   },
   "home": {
     "title1": "Bessa Sabrina",
@@ -23,7 +23,7 @@
     "title": "Projects",
     "projectItems": [
       {
-        "id": 1,
+        "id": 0,
         "title": "Landing Page",
         "img" : "/assets/saz.PNG", 
         "description": "A fully responsive and modern landing page built using HTML, CSS, and vanilla JavaScript.",
@@ -31,7 +31,7 @@
       },
 
      {
-        "id": 2,
+        "id": 1,
         "title": "Miltilingual Portfolio",
         "img": "/assets/Portfolio.PNG",
         "description": "My personal portfolio built with React and Tailwind CSS, featuring dark mode, responsive design, and reactive multilingual support.",
@@ -39,7 +39,7 @@
       },
 
       {
-        "id": 3,
+        "id": 2,
         "title": "To-do App",
         "img": "/assets/Portfolio.PNG",
         "description": "This to-do app was built using React Hooks such as useRef, useReducer, and useContext. It includes features like adding, editing, deleting tasks, and marking them as completed.",
@@ -47,7 +47,7 @@
       },
 
       {
-        "id": 4,
+        "id": 3,
         "title": "e-commerce app",
         "img": "/assets/Portfolio.PNG",
         "description": "An e-commerce product page built with React, featuring dynamic product fetching from the DummyJSON API, a functional shopping cart, and a clean, responsive UI.",
