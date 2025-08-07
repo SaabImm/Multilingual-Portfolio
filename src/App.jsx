@@ -6,9 +6,19 @@ import Skills from './Pages/Skills'
 import About from './Pages/AboutMe'
 import Contact from './Pages/ContactMe'
 import { useLangueContext } from './Context/translation'
+import { useEffect } from 'react'
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 export default function App() {
+useEffect(() => {
+  AOS.init({
+    duration: 1000,
+    once: true, // animation happens only once
+  });
+}, []);
   const { t } = useLangueContext();
   return (
     <>
