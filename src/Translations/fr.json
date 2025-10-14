@@ -47,9 +47,9 @@
       {
         "id": 3,
         "title": "Site e-commerce",
-        "img": "/assets/Portfolio.PNG",
-        "description": "Une page produit e-commerce développée avec React, intégrant une récupération dynamique des produits via l’API DummyJSON, un panier fonctionnel et une interface propre et responsive.",
-        "techs": ["React", "Tailwind"]
+        "img": "/assets/ShopEase.PNG",
+        "description": "Expérience E-Commerce Moderne. Un site e-commerce élégant et réactif conçu avec React et Tailwind CSS, offrant une navigation par catégories, des pages produits détaillées et des interactions fluides. Entièrement responsive et doté d’une palette minimaliste.",
+        "techs": ["React", "Tailwind","Responsive"]
       }
 ]},
 

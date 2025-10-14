@@ -49,9 +49,9 @@
       {
         "id": 3,
         "title": "e-commerce app",
-        "img": "/assets/Portfolio.PNG",
-        "description": "An e-commerce product page built with React, featuring dynamic product fetching from the DummyJSON API, a functional shopping cart, and a clean, responsive UI.",
-        "techs": ["React", "Tailwind"]
+        "img": "/assets/ShopEase.PNG",
+        "description": "Modern E-Commerce Experience. A sleek and responsive e-commerce website built with React and Tailwind CSS, featuring category-based browsing, detailed product pages, and smooth UI interactions. Responsive and designed with a minimalist palette.",
+        "techs": ["React", "Tailwind", "Responsive"]
       }
 ]},
     "skills": {
