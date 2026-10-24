@@ -60,7 +60,8 @@ public/assets/       # Project screenshots
 
 ## 📬 Contact
 
-- Email: saabimm@gmail.com
+- Email: sabrinabessa754@gmail.com
+- Phone: +213 797 81 76 23
 - LinkedIn: https://www.linkedin.com/in/saab-imm-4697a8320
 - GitHub: https://github.com/SaabImm
 

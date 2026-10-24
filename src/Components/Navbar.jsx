@@ -23,6 +23,7 @@ export default function Navbar({ lang }) {
 
   const navItems = [
     { href: "#home", label: lang.navbar.home },
+    { href: "#services", label: lang.navbar.services },
     { href: "#projects", label: lang.navbar.projects },
     { href: "#skills", label: lang.navbar.skills },
     { href: "#about", label: lang.navbar.about },

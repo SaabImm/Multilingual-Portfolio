@@ -8,7 +8,7 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import {
   SiTypescript, SiNextdotjs, SiNestjs, SiExpress, SiMongodb, SiPostgresql,
   SiPrisma, SiRedis, SiPuppeteer, SiSwagger, SiJsonwebtokens, SiDocker,
-  SiGithubactions, SiLinux, SiNginx, SiVercel, SiPostman
+  SiGithubactions, SiLinux, SiNginx, SiVercel, SiPostman, SiFramer, SiPhp, SiMysql
 } from "react-icons/si";
 
 // Single source of truth for every technology shown on the site.
@@ -30,7 +30,10 @@ export const techs = {
   jwt: { icon: SiJsonwebtokens, label: "JWT Auth", color: "text-pink-400" },
   swagger: { icon: SiSwagger, label: "Swagger", color: "text-green-500" },
   puppeteer: { icon: SiPuppeteer, label: "Puppeteer", color: "text-emerald-500" },
+  framermotion: { icon: SiFramer, label: "Framer Motion", color: "text-pink-500" },
   wordpress: { icon: FaWordpress, label: "WordPress", color: "text-blue-400" },
+  php: { icon: SiPhp, label: "PHP", color: "text-indigo-400" },
+  mysql: { icon: SiMysql, label: "MySQL", color: "text-sky-600" },
   mongodb: { icon: SiMongodb, label: "MongoDB", color: "text-green-600" },
   postgresql: { icon: SiPostgresql, label: "PostgreSQL", color: "text-blue-400" },
   prisma: { icon: SiPrisma, label: "Prisma", color: "text-indigo-400" },
@@ -47,9 +50,9 @@ export const techs = {
 
 // Skill groups; `key` maps to translations `skills.categories.<key>`.
 export const skillCategories = [
-  { key: "frontend", emoji: "🎨", items: ["html", "css", "javascript", "typescript", "react", "nextjs", "tailwind", "sass", "bootstrap", "responsive"] },
-  { key: "backend", emoji: "⚙️", items: ["nodejs", "nestjs", "express", "jwt", "swagger", "puppeteer", "wordpress"] },
-  { key: "databases", emoji: "🗄️", items: ["postgresql", "prisma", "mongodb", "redis"] },
+  { key: "frontend", emoji: "🎨", items: ["html", "css", "javascript", "typescript", "react", "nextjs", "tailwind", "framermotion", "sass", "bootstrap", "responsive"] },
+  { key: "backend", emoji: "⚙️", items: ["nodejs", "nestjs", "express", "jwt", "swagger", "puppeteer", "wordpress", "php"] },
+  { key: "databases", emoji: "🗄️", items: ["postgresql", "prisma", "mongodb", "mysql", "redis"] },
   { key: "devops", emoji: "🚀", items: ["docker", "githubactions", "linux", "nginx", "vercel"] },
   { key: "tools", emoji: "🛠️", items: ["git", "github", "postman"] },
 ];

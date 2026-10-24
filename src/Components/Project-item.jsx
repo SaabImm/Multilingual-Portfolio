@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useDarkMode } from '../Context/contexts';
 import IconsThing from './Icons';
-import { FaGithub, FaExternalLinkAlt, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaChevronLeft, FaChevronRight, FaArrowRight } from 'react-icons/fa';
 
 export default function ProjectItem({ item, lang }) {
   const { isDark } = useDarkMode();
@@ -36,6 +36,18 @@ export default function ProjectItem({ item, lang }) {
         {/* Image Carousel */}
         <div className="w-full lg:w-1/2 relative overflow-hidden rounded-xl group/image">
           <div className="relative aspect-video overflow-hidden">
+            {images.length === 0 && (
+              <div className={`absolute inset-0 flex flex-col items-center justify-center gap-3 bg-gradient-to-br ${
+                isDark ? 'from-[#ff0000]/10 via-white/5 to-purple-500/10' : 'from-[#ff0000]/10 via-gray-100 to-purple-300/20'
+              }`}>
+                {item.placeholder && (
+                  <span className="font-[Aclonica] text-5xl md:text-6xl text-[#ff0000]">{item.placeholder}</span>
+                )}
+                <span className={`text-xs uppercase tracking-widest ${isDark ? 'text-gray-400' : 'text-gray-500'}`}>
+                  {lang.projects.screenshotsSoon}
+                </span>
+              </div>
+            )}
             {images.map((src, idx) => (
               <img
                 key={idx}
@@ -145,6 +157,14 @@ export default function ProjectItem({ item, lang }) {
           <div className="pt-4">
             <IconsThing table={item.techs} />
           </div>
+          {item.caseStudy && (
+            <a
+              href={`#case-${item.caseStudy.slug}`}
+              className="inline-flex items-center gap-2 mt-2 px-6 py-2.5 text-sm font-semibold text-white bg-[#ff0000] rounded-full hover:bg-[#ff0000]/80 transition-all shadow-lg shadow-[#ff0000]/25 hover:scale-105"
+            >
+              {lang.projects.caseStudyLabels.open} <FaArrowRight className="text-xs" />
+            </a>
+          )}
         </div>
       </div>
     </div>

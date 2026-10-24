@@ -1,6 +1,7 @@
 {
   "navbar": {
     "home": "Accueil",
+    "services": "Services",
     "projects": "Projets",
     "skills": "Compétences",
     "about": "À propos",
@@ -19,23 +20,151 @@
     "cta2": "Discutons",
     "scroll": "Défiler"
   },
+  "services": {
+    "title": "Services",
+    "subtitle": "Du site vitrine professionnel à l'application web sur mesure, voici comment je peux aider votre entreprise.",
+    "forLabel": "Idéal pour :",
+    "quote": "Demander un devis",
+    "proof": "Voir un projet réel",
+    "offers": {
+      "websites": {
+        "title": "Sites vitrines & WordPress",
+        "pitch": "Je crée et modernise des sites d'entreprise qui présentent votre marque de façon professionnelle et facilitent la prise de contact de vos clients.",
+        "for": "les petites entreprises, prestataires de services, marques locales et agences.",
+        "deliverables": [
+          "Sites vitrines multi-pages et landing pages",
+          "Refontes WordPress et personnalisation de page builders",
+          "Mises en page responsives pour mobile et ordinateur",
+          "Formulaires de contact, cartes, liens de réservation et autres intégrations",
+          "SEO on-page de base, contrôles de performance et mise en ligne"
+        ]
+      },
+      "react": {
+        "title": "Développement React & Next.js",
+        "pitch": "Je transforme vos maquettes et besoins en fonctionnalités React et Next.js responsives, ou je fais évoluer vos applications existantes.",
+        "for": "les agences, startups, designers avec des maquettes Figma validées, et équipes qui ont besoin de renfort.",
+        "deliverables": [
+          "Intégration de maquettes Figma en React ou Next.js",
+          "Pages responsives et composants réutilisables",
+          "Intégrations d'API et fonctionnalités frontend",
+          "Évolutions d'applications existantes",
+          "Corrections de bugs, ajustements d'interface et optimisations de performance"
+        ]
+      },
+      "api": {
+        "title": "Intégrations d'API & améliorations d'applications",
+        "pitch": "Je connecte vos services, corrige les problèmes de votre application et livre les fonctionnalités qui lui manquent.",
+        "for": "les petites équipes de développement et les entreprises disposant déjà d'un site ou d'une application web.",
+        "deliverables": [
+          "Connexion d'un frontend à une API backend existante",
+          "Intégration de services tiers",
+          "Correction des problèmes de requêtes, de validation et d'affichage des données",
+          "Fonctionnalités CRUD et workflows de formulaires",
+          "Diagnostic et correction de bugs clairement définis"
+        ]
+      },
+      "apps": {
+        "title": "Tableaux de bord & applications métier",
+        "pitch": "Je développe des applications web sur mesure qui réunissent vos utilisateurs, données, processus et opérations en un seul endroit.",
+        "for": "les startups, les entreprises qui gèrent encore leurs opérations manuellement, et les agences qui créent des outils internes.",
+        "deliverables": [
+          "Panneaux d'administration et workflows CRUD",
+          "Comptes utilisateurs et pages protégées",
+          "Tableaux, filtres, recherche et vues de reporting",
+          "API backend et intégration de bases de données",
+          "Interfaces avec gestion des permissions et mise en production"
+        ]
+      }
+    },
+    "tiersTitle": "Trois façons de travailler ensemble",
+    "tiersSubtitle": "Chaque service existe en trois formats : vous ne payez que ce dont votre projet a réellement besoin.",
+    "tiers": [
+      {
+        "name": "Starter",
+        "text": "Une petite tâche clairement définie, livrée rapidement à prix fixe.",
+        "examples": "ex. une landing page, une page responsive, une intégration d'API, une correction de mise en page WordPress."
+      },
+      {
+        "name": "Standard",
+        "text": "Un livrable complet et bien défini, à prix fixe.",
+        "examples": "ex. un site vitrine multi-pages, une fonctionnalité React à partir d'une maquette, un petit module de tableau de bord."
+      },
+      {
+        "name": "Sur mesure",
+        "text": "Un projet plus important, qui commence par une phase de cadrage et se chiffre par étapes.",
+        "examples": "ex. une application métier full-stack, des intégrations complexes, une refonte avec migration."
+      }
+    ],
+    "processTitle": "Ma méthode",
+    "process": [
+      {
+        "title": "Cadrage",
+        "text": "Nous parlons de vos objectifs et je pose les questions nécessaires pour comprendre précisément votre besoin."
+      },
+      {
+        "title": "Proposition claire",
+        "text": "Vous recevez par écrit les livrables, le délai, le prix et les étapes de paiement avant le début du travail."
+      },
+      {
+        "title": "Réalisation & retours",
+        "text": "Je développe par étapes et partage régulièrement l'avancement, avec un nombre de révisions convenu."
+      },
+      {
+        "title": "Livraison & suivi",
+        "text": "Nous vérifions ensemble le résultat selon les critères d'acceptation convenus, puis je le mets en ligne et vous accompagne."
+      }
+    ],
+    "cta": "Parlez-moi de votre projet"
+  },
   "about": {
     "title": "À propos",
     "bio": [
       "Développeuse full-stack avec une solide formation en mathématiques, cryptographie et logique — un bagage unique qui me permet de transformer des problèmes complexes en code propre et scalable. Autodidacte et curieuse, je fais le pont entre un design front-end créatif et une architecture back-end robuste.",
-      "Frontend : React, Next.js (App Router), TypeScript et TailwindCSS. Backend : Node.js, Express et NestJS — des API REST modulaires et typées, avec authentification JWT, gestion des rôles et documentation Swagger. Données : PostgreSQL avec Prisma ORM, MongoDB, et Redis pour le cache et les files d'attente. DevOps : services conteneurisés avec Docker, CI/CD avec GitHub Actions, serveurs Linux derrière Nginx, et déploiements sur Vercel.",
+      "Frontend : React, Next.js (App Router), TypeScript et TailwindCSS. Backend : Node.js, Express et NestJS — des API REST modulaires et typées, avec authentification JWT, gestion des rôles et documentation Swagger. Données : PostgreSQL avec Prisma ORM, MongoDB, et Redis pour le cache et les files d'attente. DevOps : services conteneurisés avec Docker, CI/CD avec GitHub Actions, serveurs Linux derrière Nginx, et déploiements sur Vercel. WordPress : plus de 50 sites réalisés pour des institutions gouvernementales.",
       "Je ne me contente pas de construire des composants — je conçois des solutions complètes, du schéma de base de données à l'application déployée. Courante en anglais, français et arabe, je communique clairement avec des clients européens et internationaux. Indépendante, persévérante et passionnée, je transforme vos idées en applications web prêtes pour la production. Construisons ensemble quelque chose de grand !"
     ]
   },
   "contact": {
     "title": "Contact",
-    "text": "Merci de votre visite ! Si vous pensez que je corresponds à votre équipe ou à votre projet, vous pouvez me joindre ici :",
+    "text": "Un projet en tête ou une question ? Envoyez-moi un message et je vous réponds sous 24 à 48 h, ou contactez-moi directement par e-mail ou par téléphone.",
+    "emailLabel": "E-mail",
+    "phoneLabel": "Téléphone",
+    "form": {
+      "title": "Envoyez-moi un message",
+      "name": "Votre nom",
+      "namePh": "Jean Dupont",
+      "email": "Votre e-mail",
+      "emailPh": "vous@entreprise.com",
+      "service": "De quoi avez-vous besoin ?",
+      "servicePh": "Choisissez un service (facultatif)",
+      "other": "Autre chose",
+      "message": "Votre message",
+      "messagePh": "Parlez-moi de votre projet, de vos objectifs et de vos délais...",
+      "send": "Envoyer le message",
+      "sending": "Envoi en cours...",
+      "success": "Merci ! Votre message a bien été envoyé. Je vous réponds très vite.",
+      "error": "Désolée, le message n'a pas pu être envoyé. Réessayez ou écrivez-moi directement à"
+    },
     "footer": "Réalisé avec React & Tailwind"
   },
   "projects": {
     "title": "Projets",
     "live": "Démo en ligne",
     "code": "Code",
+    "caseStudyLabels": {
+      "open": "Lire l'étude de cas",
+      "eyebrow": "Étude de cas · Plateforme full-stack",
+      "back": "Retour aux projets",
+      "close": "Fermer",
+      "context": "Le contexte",
+      "role": "Mon rôle",
+      "features": "Fonctionnalités",
+      "architecture": "Architecture",
+      "challenges": "Défis principaux",
+      "gallery": "Captures d'écran",
+      "ctaText": "Besoin d'une plateforme comme celle-ci pour votre organisation ?",
+      "cta": "Discutons"
+    },
     "projectItems": [
       {
         "id": 4,
@@ -47,8 +176,282 @@
           "/assets/GestOrg-Cotisations.png",
           "/assets/GestOrg-Stats.png"
         ],
-        "description": "Une plateforme de gestion complète pour une association nationale d'architectes comptant plus de 1000 membres. Automatise la validation des adhérents, le suivi financier, le calcul des pénalités et la génération dynamique de documents PDF avec des modèles personnalisables et des QR codes pour les reçus officiels, les situations financières et les diplômes.",
-        "techs": ["React", "NestJS", "PostgreSQL", "Prisma", "Redis", "Puppeteer", "Tailwind"]
+        "description": "Une plateforme de gestion complète pour une association nationale d'architectes comptant plus de 10 000 membres. Automatise la validation des adhérents, le suivi financier, le calcul des pénalités et la génération dynamique de documents PDF avec des modèles personnalisables et des QR codes pour les reçus officiels, les situations financières et les diplômes.",
+        "techs": [
+          "React",
+          "NestJS",
+          "PostgreSQL",
+          "Prisma",
+          "Redis",
+          "Puppeteer",
+          "Tailwind"
+        ],
+        "caseStudy": {
+          "slug": "gestorg",
+          "tagline": "Une plateforme de gestion pour une association nationale d'architectes : validation des membres, cotisations et pénalités, permissions, statistiques et documents PDF officiels, réunis en un seul endroit.",
+          "stats": [
+            {
+              "value": "10k+",
+              "label": "membres gérés"
+            },
+            {
+              "value": "3",
+              "label": "types de documents officiels"
+            },
+            {
+              "value": "QR",
+              "label": "documents vérifiables"
+            },
+            {
+              "value": "RBAC",
+              "label": "permissions par rôle"
+            }
+          ],
+          "context": "Une association nationale d'architectes doit suivre plus de 10 000 membres : valider les nouvelles inscriptions, encaisser les cotisations annuelles, appliquer les pénalités de retard et délivrer des documents officiels comme les reçus, les situations financières et les diplômes. Gérer tout cela avec des tableurs et du papier est lent et source d'erreurs.",
+          "role": "J'ai conçu et développé la plateforme de bout en bout : le schéma PostgreSQL avec Prisma, l'API REST NestJS avec authentification et permissions, le tableau de bord React et la chaîne de génération de documents PDF.",
+          "features": [
+            {
+              "title": "Validation des membres",
+              "text": "Les demandes d'inscription passent par un circuit de validation avant l'activation du membre."
+            },
+            {
+              "title": "Suivi des cotisations",
+              "text": "Les cotisations annuelles et l'historique de paiement de chaque membre dans une seule vue."
+            },
+            {
+              "title": "Pénalités automatiques",
+              "text": "Les pénalités de retard sont calculées automatiquement selon les règles de l'association."
+            },
+            {
+              "title": "Permissions",
+              "text": "Un contrôle d'accès par rôle définit qui peut consulter, valider ou modifier chaque partie de la plateforme."
+            },
+            {
+              "title": "Documents PDF officiels",
+              "text": "Reçus, situations financières et diplômes générés à partir de modèles personnalisables, chacun avec un QR code."
+            },
+            {
+              "title": "Tableau de statistiques",
+              "text": "Des chiffres en temps réel sur les membres, les paiements et les soldes restants pour le bureau de l'association."
+            }
+          ],
+          "architecture": [
+            {
+              "name": "Frontend",
+              "parts": [
+                "React + Tailwind",
+                "Tableau de bord admin",
+                "Statistiques & graphiques"
+              ]
+            },
+            {
+              "name": "API NestJS",
+              "parts": [
+                "Guards d'authentification & permissions",
+                "Modules membres / cotisations / pénalités",
+                "Service de documents (Puppeteer)"
+              ]
+            },
+            {
+              "name": "Données",
+              "parts": [
+                "PostgreSQL",
+                "Prisma ORM",
+                "Redis"
+              ]
+            }
+          ],
+          "challenges": [
+            {
+              "title": "Des documents officiels au pixel près",
+              "text": "Les reçus et diplômes doivent être identiques à chaque fois. Les documents sont construits à partir de modèles HTML personnalisables et rendus en PDF avec Chrome headless (Puppeteer), avec un QR code intégré pour pouvoir vérifier chaque document."
+            },
+            {
+              "title": "Des données financières cohérentes",
+              "text": "Les cotisations et pénalités sont calculées côté serveur, jamais dans le navigateur, afin que chaque reçu et chaque situation reposent sur la même source de vérité dans PostgreSQL."
+            },
+            {
+              "title": "Un accès fin",
+              "text": "Chaque rôle du personnel a des droits différents. Les permissions sont appliquées dans l'API elle-même, pas seulement masquées dans l'interface : une requête sans le bon rôle est refusée."
+            }
+          ]
+        }
+      },
+      {
+        "id": 5,
+        "title": "MBS Solutions — Site vitrine",
+        "images": [
+          "/assets/MBS-Home.png",
+          "/assets/MBS-Services.png",
+          "/assets/MBS-About.png",
+          "/assets/MBS-Clients.png"
+        ],
+        "description": "Le site vitrine bilingue (français/anglais) de MBS Solutions, une entreprise algérienne d'ingénierie informatique. Réalisé avec Next.js, il présente les services, les plateformes, l'historique et les clients de l'entreprise, avec des animations fluides et un formulaire de contact qui envoie directement un e-mail à l'équipe.",
+        "techs": [
+          "Next.js",
+          "React",
+          "Tailwind",
+          "Framer Motion",
+          "Nodemailer",
+          "Responsive"
+        ],
+        "caseStudy": {
+          "slug": "mbs-solutions",
+          "eyebrow": "Étude de cas · Site Next.js",
+          "tagline": "Un site Next.js rapide et bilingue qui présente une entreprise d'ingénierie informatique aux entreprises et aux administrations, et transforme les visiteurs en prospects.",
+          "stats": [
+            {
+              "value": "FR/EN",
+              "label": "entièrement bilingue"
+            },
+            {
+              "value": "4",
+              "label": "pages : accueil, services, projets, à propos"
+            },
+            {
+              "value": "7",
+              "label": "offres de services présentées"
+            },
+            {
+              "value": "API",
+              "label": "formulaire de contact côté serveur"
+            }
+          ],
+          "context": "MBS Solutions conçoit des plateformes logicielles (GestOrg, Khabir, E-GED) et des services informatiques pour des organisations, des ordres professionnels et des administrations, en Algérie et à l'international. L'entreprise avait besoin d'un site moderne qui explique son activité, montre les clients qui lui font confiance et facilite les demandes de devis, en français comme en anglais.",
+          "role": "J'ai conçu et développé le site : structure des pages et interface, système de traduction, animations et backend du formulaire de contact.",
+          "features": [
+            {
+              "title": "Contenu bilingue",
+              "text": "Tous les textes sont dans des dictionnaires français et anglais, avec un changement de langue instantané depuis la barre de navigation, sans rechargement."
+            },
+            {
+              "title": "Catalogue de services",
+              "text": "Sept offres de services, chacune avec une vue détaillée de ce qui est inclus."
+            },
+            {
+              "title": "Plateformes & projets",
+              "text": "Présentation des plateformes de l'entreprise (GestOrg, Khabir, E-GED) avec leurs descriptions et fonctionnalités."
+            },
+            {
+              "title": "Historique de l'entreprise",
+              "text": "Une frise chronologique animée, de la création en 2018 à l'ouverture des bureaux à l'international."
+            },
+            {
+              "title": "Logos clients",
+              "text": "Un bandeau défilant des organisations qui travaillent avec MBS, pour une crédibilité immédiate."
+            },
+            {
+              "title": "Formulaire de contact & carte",
+              "text": "Un formulaire validé avec compteur de progression qui envoie un e-mail à l'équipe, et une carte Google Maps intégrée."
+            }
+          ],
+          "architecture": [
+            {
+              "name": "Navigateur",
+              "parts": [
+                "Pages Next.js (React 19)",
+                "Tailwind CSS + Framer Motion",
+                "Contexte de traduction FR/EN"
+              ]
+            },
+            {
+              "name": "Serveur Next.js",
+              "parts": [
+                "Pages rendues côté serveur",
+                "Route API /api/contact",
+                "Serveur Node personnalisé (server.js)"
+              ]
+            },
+            {
+              "name": "E-mail",
+              "parts": [
+                "Nodemailer",
+                "Identifiants SMTP en variables d'environnement",
+                "Message livré dans la boîte de l'équipe"
+              ]
+            }
+          ],
+          "challenges": [
+            {
+              "title": "Un formulaire de contact sans exposer de secrets",
+              "text": "Le formulaire envoie les données à une route API Next.js qui valide les champs et envoie l'e-mail avec Nodemailer côté serveur. Les identifiants SMTP restent dans les variables d'environnement et n'atteignent jamais le navigateur."
+            },
+            {
+              "title": "Deux langues, une seule base de code",
+              "text": "Plutôt que de dupliquer les pages, chaque composant lit ses textes depuis un contexte de traduction partagé, alimenté par des fichiers JSON français et anglais : ajouter du contenu revient à modifier des données, pas du code."
+            },
+            {
+              "title": "Des animations qui restent rapides",
+              "text": "Les sections apparaissent avec Framer Motion une seule fois, lorsqu'elles entrent à l'écran, ce qui rend le site vivant sans nuire aux performances."
+            }
+          ]
+        }
+      },
+      {
+        "id": 6,
+        "title": "Plus de 50 sites gouvernementaux (WordPress)",
+        "images": [],
+        "placeholder": "50+",
+        "description": "Plus de 50 sites WordPress réalisés pour des institutions gouvernementales : des sites officiels et responsives que le personnel non technique peut mettre à jour lui-même, livrés rapidement et de façon homogène.",
+        "techs": [
+          "WordPress",
+          "PHP",
+          "MySQL",
+          "Responsive"
+        ],
+        "caseStudy": {
+          "slug": "wordpress-gov",
+          "eyebrow": "Étude de cas · WordPress à grande échelle",
+          "tagline": "Plus de 50 sites officiels pour des institutions publiques, construits sur WordPress afin que chaque organisation dispose d'un site professionnel que ses propres équipes peuvent tenir à jour.",
+          "stats": [
+            {
+              "value": "50+",
+              "label": "sites livrés"
+            },
+            {
+              "value": "Gov",
+              "label": "clients du secteur public"
+            },
+            {
+              "value": "CMS",
+              "label": "gérés par les équipes internes"
+            },
+            {
+              "value": "100%",
+              "label": "responsive"
+            }
+          ],
+          "context": "Les institutions gouvernementales ont besoin d'une présence web officielle pour publier actualités, annonces, documents et coordonnées. Chacune a besoin d'un site crédible et cohérent que ses équipes peuvent mettre à jour sans faire appel à un développeur.",
+          "role": "J'ai réalisé et livré les sites : installation de WordPress, conception et configuration des thèmes, structuration des contenus, et remise de sites que le personnel peut gérer en autonomie.",
+          "features": [
+            {
+              "title": "Un design officiel et cohérent",
+              "text": "Un rendu professionnel adapté à l'identité de chaque institution, avec une structure homogène d'un site à l'autre."
+            },
+            {
+              "title": "Mises à jour faciles",
+              "text": "Le personnel publie actualités, annonces et pages depuis le tableau de bord WordPress, sans connaissances techniques."
+            },
+            {
+              "title": "Responsive sur tous les écrans",
+              "text": "Chaque site fonctionne sur téléphone, tablette et ordinateur."
+            },
+            {
+              "title": "Une livraison reproductible",
+              "text": "Un processus de mise en place éprouvé permet de livrer de nombreux sites rapidement, avec une qualité constante."
+            }
+          ],
+          "challenges": [
+            {
+              "title": "Livrer à grande échelle",
+              "text": "Réaliser plus de 50 sites impose de transformer la mise en place en un processus reproductible, pour que chaque nouvelle institution obtienne rapidement un site fiable et soigné."
+            },
+            {
+              "title": "Pensé pour des éditeurs non techniques",
+              "text": "Les sites sont structurés pour que les personnes qui les mettent à jour au quotidien puissent le faire en toute confiance depuis le tableau de bord WordPress."
+            }
+          ]
+        }
       },
       {
         "id": 3,
@@ -58,7 +461,11 @@
           "/assets/EaseShopCategory.PNG"
         ],
         "description": "Un site e-commerce élégant et responsive conçu avec React et Tailwind CSS, offrant une navigation par catégories, des pages produits détaillées et des interactions fluides, avec une palette minimaliste.",
-        "techs": ["React", "Tailwind", "Responsive"]
+        "techs": [
+          "React",
+          "Tailwind",
+          "Responsive"
+        ]
       },
       {
         "id": 1,
@@ -69,17 +476,30 @@
           "/assets/portfolio-skills.png"
         ],
         "description": "Ce portfolio : réalisé avec React et Tailwind CSS, avec un mode sombre qui suit votre système, des préférences mémorisées, un design responsive et une prise en charge réactive anglais/français. Déployé sur Vercel.",
-        "techs": ["React", "Tailwind", "Responsive", "Vercel"],
+        "techs": [
+          "React",
+          "Tailwind",
+          "Responsive",
+          "Vercel"
+        ],
         "githubLink": "https://github.com/SaabImm/Multilingual-Portfolio"
       },
       {
         "id": 0,
         "title": "Page d'atterrissage",
-        "images": ["/assets/saz.PNG"],
+        "images": [
+          "/assets/saz.PNG"
+        ],
         "description": "Une page d'atterrissage moderne et entièrement responsive pour une agence de voyage, développée en HTML, CSS et JavaScript pur.",
-        "techs": ["HTML", "JavaScript", "CSS", "Responsive"]
+        "techs": [
+          "HTML",
+          "JavaScript",
+          "CSS",
+          "Responsive"
+        ]
       }
-    ]
+    ],
+    "screenshotsSoon": "Captures d'écran à venir"
   },
   "skills": {
     "title": "Compétences",
