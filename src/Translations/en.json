@@ -4,57 +4,92 @@
     "projects": "Projects",
     "skills": "Skills",
     "about": "About",
-    "contact": "Contact"
+    "contact": "Contact",
+    "toggleTheme": "Toggle dark mode",
+    "toggleLang": "Passer en français",
+    "toggleMenu": "Toggle menu"
   },
   "home": {
+    "badge": "🚀 AVAILABLE FOR FREELANCE",
     "title1": "Bessa Sabrina",
-    "title2" : "Front-End",
-    "title3" : "Web Developer"
+    "title2": "Full-Stack",
+    "title3": "Web Developer",
+    "subtitle": "TypeScript · React / Next.js · NestJS · Prisma · PostgreSQL · Docker",
+    "cta": "View My Work",
+    "cta2": "Let's Talk",
+    "scroll": "Scroll"
   },
   "about": {
     "title": "About Me",
-    "bio": "Self-taught front-end developer, passionate about modern web development, with a solid academic background in mathematics, cryptography, and logic. My rigorous approach to problem-solving comes from my university experience, while my curiosity and creativity are reflected in my web projects. I have strong command of web languages (HTML, CSS, and JavaScript ES6+), along with in-depth knowledge of native CSS and DOM manipulation. My continuous learning has allowed me to progress rapidly in React, which I continue to improve through hands-on projects. With several components and complete projects already built, I am motivated, independent, persistent, and always ready to take on new challenges."
+    "bio": [
+      "Full-stack developer with a unique foundation in mathematics, cryptography, and logic — skills that turn complex problems into clean, scalable code. Self-taught and relentlessly curious, I bridge creative front-end design and robust back-end architecture.",
+      "Frontend: React, Next.js (App Router), TypeScript and TailwindCSS. Backend: Node.js, Express and NestJS — modular, type-safe REST APIs with JWT authentication, role-based permissions and Swagger docs. Data: PostgreSQL with Prisma ORM, MongoDB, and Redis for caching and queues. DevOps: Dockerized services, CI/CD with GitHub Actions, Linux servers behind Nginx, and deployments on Vercel.",
+      "I don't just build components — I architect complete solutions, from the database schema to the deployed application. Fluent in English, French, and Arabic, I communicate clearly with European and international clients. Independent, persistent, and passionate about turning ideas into production-ready web applications. Let's build something great together."
+    ]
   },
   "contact": {
     "title": "Contact Me",
-    "text": "Thanks for visiting my site, if you find me to be a good fit for your team then you will find me on : "
+    "text": "Thanks for visiting! If you think I'd be a good fit for your team or project, you can reach me here:",
+    "footer": "Built with React & Tailwind"
   },
   "projects": {
     "title": "Projects",
+    "live": "Live Demo",
+    "code": "Code",
     "projectItems": [
+      {
+        "id": 4,
+        "title": "Architectural Association Management Platform",
+        "images": [
+          "/assets/GestOrg-Dashboard.png",
+          "/assets/GestOrg-Profile.png",
+          "/assets/GestOrg-Permissions.png",
+          "/assets/GestOrg-Cotisations.png",
+          "/assets/GestOrg-Stats.png"
+        ],
+        "description": "A full-featured management platform for a national architectural association handling 1000+ members. Automates member validation, financial tracking, penalty calculations, and dynamic PDF document generation with customizable templates and QR codes for official receipts, financial statements, and diplomas.",
+        "techs": ["React", "NestJS", "PostgreSQL", "Prisma", "Redis", "Puppeteer", "Tailwind"]
+      },
+      {
+        "id": 3,
+        "title": "E-commerce App",
+        "images": [
+          "/assets/ShopEase.PNG",
+          "/assets/EaseShopCategory.PNG"
+        ],
+        "description": "A sleek, responsive e-commerce website built with React and Tailwind CSS, featuring category-based browsing, detailed product pages, and smooth UI interactions, designed with a minimalist palette.",
+        "techs": ["React", "Tailwind", "Responsive"]
+      },
+      {
+        "id": 1,
+        "title": "Multilingual Portfolio",
+        "images": [
+          "/assets/portfolio.png",
+          "/assets/portfolio-projects.png",
+          "/assets/portfolio-skills.png"
+        ],
+        "description": "This portfolio: built with React and Tailwind CSS, featuring dark mode that follows your system, remembered preferences, responsive design, and reactive English/French support. Deployed on Vercel.",
+        "techs": ["React", "Tailwind", "Responsive", "Vercel"],
+        "githubLink": "https://github.com/SaabImm/Multilingual-Portfolio"
+      },
       {
         "id": 0,
         "title": "Landing Page",
-        "img" : "/assets/saz.PNG", 
-        "description": "A fully responsive and modern landing page built using HTML, CSS, and vanilla JavaScript.",
+        "images": ["/assets/saz.PNG"],
+        "description": "A fully responsive and modern landing page for a travel agency, built using HTML, CSS, and vanilla JavaScript.",
         "techs": ["HTML", "JavaScript", "CSS", "Responsive"]
-      },
-
-     {
-        "id": 1,
-        "title": "Miltilingual Portfolio",
-        "img": "/assets/Portfolio.PNG",
-        "description": "My personal portfolio built with React and Tailwind CSS, featuring dark mode, responsive design, and reactive multilingual support.",
-        "techs": ["React", "Tailwind", "Responsive"]
-      },
-
-      {
-        "id": 2,
-        "title": "To-do App",
-        "img": "/assets/Portfolio.PNG",
-        "description": "This to-do app was built using React Hooks such as useRef, useReducer, and useContext. It includes features like adding, editing, deleting tasks, and marking them as completed.",
-        "techs": ["React", "Tailwind"]
-      },
-
-      {
-        "id": 3,
-        "title": "e-commerce app",
-        "img": "/assets/ShopEase.PNG",
-        "description": "Modern E-Commerce Experience. A sleek and responsive e-commerce website built with React and Tailwind CSS, featuring category-based browsing, detailed product pages, and smooth UI interactions. Responsive and designed with a minimalist palette.",
-        "techs": ["React", "Tailwind", "Responsive"]
       }
-]},
-    "skills": {
-      "title": "Skills"
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "Full-Stack Developer · TypeScript · NestJS · Prisma · PostgreSQL · Docker",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend & APIs",
+      "databases": "Databases & ORMs",
+      "devops": "DevOps & Cloud",
+      "tools": "Tools & Version Control"
+    }
   }
 }

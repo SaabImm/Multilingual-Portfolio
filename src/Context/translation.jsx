@@ -1,37 +1,30 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import { LanguageContext, readPref, writePref } from "./contexts";
 import en from '../Translations/en.json'
 import fr from '../Translations/fr.json'
 
+const dictionaries = { en, fr };
 
-const LanguageContext = createContext();
-
-export function TranslationProvider({children}){
-    const [language, setLanguage] = useState("en")
-    const [t, setT] = useState(en)
-
-    const toggleLang = () => {
-        if (language=="en") {
-            setLanguage("fr")
-        }
-        else {setLanguage("en")}
-
-    }
-
-      useEffect(() => {
-    if (language === "fr") {
-      setT(fr);
-    } else {
-      setT(en);
-    }
-  }, [language]);
-  
-    return(
-    <LanguageContext.Provider value={{ language,toggleLang,t }}>
-      {children}
-    </LanguageContext.Provider>
-    );
+// Saved choice first, then the browser language.
+function initialLanguage() {
+  const saved = readPref("lang");
+  if (saved in dictionaries) return saved;
+  return navigator.language?.startsWith("fr") ? "fr" : "en";
 }
 
-export function useLangueContext() {
-  return useContext(LanguageContext);
+export function TranslationProvider({ children }) {
+  const [language, setLanguage] = useState(initialLanguage);
+
+  const toggleLang = () => setLanguage(prev => (prev === "en" ? "fr" : "en"));
+
+  useEffect(() => {
+    document.documentElement.lang = language;
+    writePref("lang", language);
+  }, [language]);
+
+  return (
+    <LanguageContext.Provider value={{ language, toggleLang, t: dictionaries[language] }}>
+      {children}
+    </LanguageContext.Provider>
+  );
 }

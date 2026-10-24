@@ -3,57 +3,93 @@
     "home": "Accueil",
     "projects": "Projets",
     "skills": "Compétences",
-    "about": "A propos",
-    "contact": "Contact"
+    "about": "À propos",
+    "contact": "Contact",
+    "toggleTheme": "Basculer le mode sombre",
+    "toggleLang": "Switch to English",
+    "toggleMenu": "Ouvrir le menu"
   },
   "home": {
+    "badge": "🚀 DISPONIBLE EN FREELANCE",
     "title1": "Bessa Sabrina",
-    "title2" : "Developpeur Web",
-    "title3" : "Front-End"
+    "title2": "Développeuse Web",
+    "title3": "Full-Stack",
+    "subtitle": "TypeScript · React / Next.js · NestJS · Prisma · PostgreSQL · Docker",
+    "cta": "Voir mes projets",
+    "cta2": "Discutons",
+    "scroll": "Défiler"
   },
   "about": {
-    "title": "A propos",
-    "bio": "Développeur front-end autodidacte, passionnée par le développement web moderne, avec un parcours académique solide en mathématiques, cryptographie et logique. Mon approche rigoureuse des problèmes vient de mon expérience universitaire, tandis que ma curiosité et ma créativité se reflètent dans mes projets web. Je maîtrise les langages du web (HTML, CSS, JavaScript ES6+) et je possède une connaissance approfondie de CSS natif ainsi que de la manipulation du DOM. Mon apprentissage continu m’a permis de progresser rapidement en React que je continue de perfectionner à travers des projets concrets. Avec déjà plusieurs composants et projets réalisés. Je suis motivée, autonome, persévérante, et toujours prête à relever de nouveaux défis."
+    "title": "À propos",
+    "bio": [
+      "Développeuse full-stack avec une solide formation en mathématiques, cryptographie et logique — un bagage unique qui me permet de transformer des problèmes complexes en code propre et scalable. Autodidacte et curieuse, je fais le pont entre un design front-end créatif et une architecture back-end robuste.",
+      "Frontend : React, Next.js (App Router), TypeScript et TailwindCSS. Backend : Node.js, Express et NestJS — des API REST modulaires et typées, avec authentification JWT, gestion des rôles et documentation Swagger. Données : PostgreSQL avec Prisma ORM, MongoDB, et Redis pour le cache et les files d'attente. DevOps : services conteneurisés avec Docker, CI/CD avec GitHub Actions, serveurs Linux derrière Nginx, et déploiements sur Vercel.",
+      "Je ne me contente pas de construire des composants — je conçois des solutions complètes, du schéma de base de données à l'application déployée. Courante en anglais, français et arabe, je communique clairement avec des clients européens et internationaux. Indépendante, persévérante et passionnée, je transforme vos idées en applications web prêtes pour la production. Construisons ensemble quelque chose de grand !"
+    ]
   },
   "contact": {
     "title": "Contact",
-    "text": "Merci d'avoir visité mon site web, si vous me jugez digne de votre equipe, vous me trouverez sur :"
+    "text": "Merci de votre visite ! Si vous pensez que je corresponds à votre équipe ou à votre projet, vous pouvez me joindre ici :",
+    "footer": "Réalisé avec React & Tailwind"
   },
   "projects": {
     "title": "Projets",
-    "projectItems":[ 
+    "live": "Démo en ligne",
+    "code": "Code",
+    "projectItems": [
       {
-        "id": 0,
-        "title": "Page d’atterrissage",
-        "img" : "/assets/Portfolio.PNG",
-        "description": "Une page d’atterrissage moderne et entièrement responsive, développée en HTML, CSS et JavaScript pur.",
-        "techs": ["HTML", "JavaScript", "CSS", "Responsive"]
+        "id": 4,
+        "title": "Plateforme de Gestion pour Association d'Architectes",
+        "images": [
+          "/assets/GestOrg-Dashboard.png",
+          "/assets/GestOrg-Profile.png",
+          "/assets/GestOrg-Permissions.png",
+          "/assets/GestOrg-Cotisations.png",
+          "/assets/GestOrg-Stats.png"
+        ],
+        "description": "Une plateforme de gestion complète pour une association nationale d'architectes comptant plus de 1000 membres. Automatise la validation des adhérents, le suivi financier, le calcul des pénalités et la génération dynamique de documents PDF avec des modèles personnalisables et des QR codes pour les reçus officiels, les situations financières et les diplômes.",
+        "techs": ["React", "NestJS", "PostgreSQL", "Prisma", "Redis", "Puppeteer", "Tailwind"]
       },
       {
-        "id": 1,
-        "title": "Portfolio",
-        "img": "/assets/saz.PNG",
-        "description": "Mon portfolio personnel réalisé avec React et Tailwind CSS, avec mode sombre, design responsive et prise en charge multilingue réactive.",
+        "id": 3,
+        "title": "Site E-commerce",
+        "images": [
+          "/assets/ShopEase.PNG",
+          "/assets/EaseShopCategory.PNG"
+        ],
+        "description": "Un site e-commerce élégant et responsive conçu avec React et Tailwind CSS, offrant une navigation par catégories, des pages produits détaillées et des interactions fluides, avec une palette minimaliste.",
         "techs": ["React", "Tailwind", "Responsive"]
       },
       {
-        "id": 2,
-        "title": "To-do App",
-        "img": "/assets/Portfolio.PNG",
-        "description": "Cette application de tâches a été développée avec des Hooks React comme useRef, useReducer et useContext. Elle permet d’ajouter, modifier, supprimer des tâches, et de les marquer comme terminées.",
-        "techs": ["React", "Tailwind"]
+        "id": 1,
+        "title": "Portfolio Multilingue",
+        "images": [
+          "/assets/portfolio.png",
+          "/assets/portfolio-projects.png",
+          "/assets/portfolio-skills.png"
+        ],
+        "description": "Ce portfolio : réalisé avec React et Tailwind CSS, avec un mode sombre qui suit votre système, des préférences mémorisées, un design responsive et une prise en charge réactive anglais/français. Déployé sur Vercel.",
+        "techs": ["React", "Tailwind", "Responsive", "Vercel"],
+        "githubLink": "https://github.com/SaabImm/Multilingual-Portfolio"
       },
-
       {
-        "id": 3,
-        "title": "Site e-commerce",
-        "img": "/assets/ShopEase.PNG",
-        "description": "Expérience E-Commerce Moderne. Un site e-commerce élégant et réactif conçu avec React et Tailwind CSS, offrant une navigation par catégories, des pages produits détaillées et des interactions fluides. Entièrement responsive et doté d’une palette minimaliste.",
-        "techs": ["React", "Tailwind","Responsive"]
+        "id": 0,
+        "title": "Page d'atterrissage",
+        "images": ["/assets/saz.PNG"],
+        "description": "Une page d'atterrissage moderne et entièrement responsive pour une agence de voyage, développée en HTML, CSS et JavaScript pur.",
+        "techs": ["HTML", "JavaScript", "CSS", "Responsive"]
       }
-]},
-
+    ]
+  },
   "skills": {
-    "title": "Compétences"
+    "title": "Compétences",
+    "subtitle": "Développeuse Full-Stack · TypeScript · NestJS · Prisma · PostgreSQL · Docker",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend & API",
+      "databases": "Bases de données & ORM",
+      "devops": "DevOps & Cloud",
+      "tools": "Outils & gestion de versions"
+    }
   }
 }

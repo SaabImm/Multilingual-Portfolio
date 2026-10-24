@@ -1,39 +1,29 @@
-import { FaHtml5, FaCss3Alt } from "react-icons/fa"
-import { IoLogoJavascript } from "react-icons/io5"
-import { MdOutlineFitScreen } from "react-icons/md"
-import { FaReact } from "react-icons/fa6";
-import { RiTailwindCssFill } from "react-icons/ri";
+import { useDarkMode } from '../Context/contexts';
+import { findTech } from '../techs';
 
+export default function IconsThing({ table }) {
+  const { isDark } = useDarkMode();
 
-
-export default function IconsThing({table}){
-
-    return(
-    <>
-        <ul className={'grid grid-cols-2 gap-x-8 gap-y-4 justify-items-center content-center text-center font-extralight'}>
-        { table.map((ellm) => {
-            switch (ellm) {
-                case 'HTML':
-                    return <li key={ellm}> <FaHtml5 className='text-4xl m-auto'/> HTML </li>;
-                case 'CSS':
-                    return <li key={ellm}> <FaCss3Alt className='text-4xl m-auto' /> CSS </li> ;
-                case 'JavaScript':
-                    return  <li key={ellm}> <IoLogoJavascript className='text-4xl m-auto' /> JavaScript + ES6 </li> ;
-                case 'Responsive':
-                    return <li key={ellm}> <MdOutlineFitScreen  className='text-4xl m-auto' /> Responsive Design </li> ;
-                case 'React':
-                    return <li key={ellm}> <FaReact  className='text-4xl m-auto'/> React </li> ;
-                case "Tailwind":
-                    return <li key={ellm}> <RiTailwindCssFill className='text-4xl m-auto'/> TailwindCSS </li> ;
-
-                
-                default:
-                return <li key={ellm}>❓ Unknown Tech</li>;
-            }
-        }
-        
-            )}
-        </ul>
-    </>
-    )
+  return (
+    <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
+      {table.map((name) => {
+        const tech = findTech(name);
+        // Unknown techs still render as a plain tag instead of disappearing.
+        const Icon = tech?.icon;
+        return (
+          <div
+            key={name}
+            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-light transition-all duration-300 ${
+              isDark
+                ? 'bg-white/5 border-white/10 text-gray-300 hover:border-[#ff0000]/30 hover:bg-white/10'
+                : 'bg-gray-100/50 border-gray-200/30 text-gray-700 hover:border-[#ff0000]/30 hover:bg-gray-200/50'
+            }`}
+          >
+            {Icon && <Icon className={`text-sm ${tech.color}`} />}
+            <span>{tech?.label ?? name}</span>
+          </div>
+        );
+      })}
+    </div>
+  );
 }

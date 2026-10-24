@@ -1,18 +1,20 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import { DarkModeContext, readPref, writePref } from "./contexts";
 
-const DarkModeContext = createContext();
+// Saved choice first, then the visitor's OS setting.
+function initialTheme() {
+  const saved = readPref("theme");
+  if (saved) return saved === "dark";
+  return window.matchMedia?.("(prefers-color-scheme: dark)").matches ?? false;
+}
 
-export  function DarkModeProvider({ children }) {
-  const [isDark, setIsDark] = useState(false);
+export function DarkModeProvider({ children }) {
+  const [isDark, setIsDark] = useState(initialTheme);
 
   // Add/remove `.dark` class from <html>
   useEffect(() => {
-    const html = document.documentElement;
-    if (isDark) {
-      html.classList.add("dark");
-    } else {
-      html.classList.remove("dark");
-    }
+    document.documentElement.classList.toggle("dark", isDark);
+    writePref("theme", isDark ? "dark" : "light");
   }, [isDark]);
 
   return (
@@ -20,7 +22,4 @@ export  function DarkModeProvider({ children }) {
       {children}
     </DarkModeContext.Provider>
   );
-}
-export function useDarkMode() {
-  return useContext(DarkModeContext);
 }

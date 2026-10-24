@@ -1,28 +1,152 @@
-import IconsThing  from "./Icons";
+import { useState } from 'react';
+import { useDarkMode } from '../Context/contexts';
+import IconsThing from './Icons';
+import { FaGithub, FaExternalLinkAlt, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
+export default function ProjectItem({ item, lang }) {
+  const { isDark } = useDarkMode();
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-export default function ProjectItem({item}){
-    return(
-        <>
-            <div className="flex flex-col lg:flex-row justify-between items-center w-2/3 m-auto my-[150px]">
-                <div className="w-full lg:w-[670px] " data-aos="fade-right" > 
-                    <img src={item.img} />
-                </div>
+  const images = item.images;
+  const hasMultiple = images.length > 1;
 
-                <div className="lg:p-20 p-10 lg:w-2/3" data-aos="fade-left"> 
-                    <div className=' flex flex-col gap-y-10' >
-                        <div className="font-[Montserrat] text-[16px] font-light">
-                            <div className='font-[Aclonica] text-[22px] font-bold text-center'> {item.title}</div>
-                            <div className="text-center"> {item.description}</div>
-                        </div>
-                        <IconsThing table={item.techs} />          
+  const goToPrev = (e) => {
+    e.stopPropagation();
+    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+  };
 
-                    </div>
-                </div>
+  const goToNext = (e) => {
+    e.stopPropagation();
+    setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+  };
+
+  const goToSlide = (index) => {
+    setCurrentIndex(index);
+  };
+
+  return (
+    <div className="group relative">
+      <div
+        className={`flex flex-col lg:flex-row items-center gap-8 lg:gap-12 p-6 md:p-10 rounded-2xl border shadow-xl backdrop-blur-sm transition-all duration-500 hover:border-[#ff0000]/30 ${
+          isDark
+            ? 'bg-white/5 border-white/10 hover:shadow-[#ff0000]/10'
+            : 'bg-white/80 border-gray-200/50 hover:shadow-[#ff0000]/20'
+        }`}
+      >
+        {/* Image Carousel */}
+        <div className="w-full lg:w-1/2 relative overflow-hidden rounded-xl group/image">
+          <div className="relative aspect-video overflow-hidden">
+            {images.map((src, idx) => (
+              <img
+                key={idx}
+                src={src}
+                alt={`${item.title} screenshot ${idx + 1}`}
+                className={`absolute inset-0 w-full h-full object-cover transition-all duration-500 ${
+                  idx === currentIndex
+                    ? 'opacity-100 scale-100'
+                    : 'opacity-0 scale-105'
+                }`}
+                loading="lazy"
+              />
+            ))}
+
+            {/* Overlay with buttons */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+              <div className="flex gap-4">
+                {item.liveLink && (
+                  <a
+                    href={item.liveLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 bg-[#ff0000] text-white text-sm rounded-full hover:bg-[#ff0000]/80 transition-colors flex items-center gap-2"
+                  >
+                    <FaExternalLinkAlt /> {lang.projects.live}
+                  </a>
+                )}
+                {item.githubLink && (
+                  <a
+                    href={item.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 bg-white/10 text-white text-sm rounded-full hover:bg-white/20 transition-colors flex items-center gap-2"
+                  >
+                    <FaGithub /> {lang.projects.code}
+                  </a>
+                )}
+              </div>
             </div>
+          </div>
 
-            
+          {/* Navigation arrows */}
+          {hasMultiple && (
+            <>
+              <button
+                onClick={goToPrev}
+                className={`absolute left-2 top-1/2 -translate-y-1/2 p-2 rounded-full transition-all duration-200 ${
+                  isDark
+                    ? 'bg-black/50 text-white hover:bg-black/70'
+                    : 'bg-white/50 text-gray-800 hover:bg-white/80'
+                } backdrop-blur-sm shadow-lg`}
+                aria-label="Previous image"
+              >
+                <FaChevronLeft className="text-sm" />
+              </button>
+              <button
+                onClick={goToNext}
+                className={`absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-full transition-all duration-200 ${
+                  isDark
+                    ? 'bg-black/50 text-white hover:bg-black/70'
+                    : 'bg-white/50 text-gray-800 hover:bg-white/80'
+                } backdrop-blur-sm shadow-lg`}
+                aria-label="Next image"
+              >
+                <FaChevronRight className="text-sm" />
+              </button>
+            </>
+          )}
 
-        </>
-    )
+          {/* Dot indicators */}
+          {hasMultiple && (
+            <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
+              {images.map((_, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => goToSlide(idx)}
+                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                    idx === currentIndex
+                      ? 'bg-[#ff0000] w-4'
+                      : isDark
+                      ? 'bg-white/40 hover:bg-white/70'
+                      : 'bg-gray-400/60 hover:bg-gray-600/80'
+                  }`}
+                  aria-label={`Go to slide ${idx + 1}`}
+                />
+              ))}
+            </div>
+          )}
+        </div>
+
+        {/* Project details */}
+        <div className="w-full lg:w-1/2 space-y-4">
+          <h3
+            className={`font-[Aclonica] text-xl md:text-2xl ${
+              isDark ? 'text-white' : 'text-gray-900'
+            }`}
+          >
+            {item.title}
+          </h3>
+          <p
+            className={`font-[Montserrat] text-sm md:text-base leading-relaxed ${
+              isDark ? 'text-gray-300' : 'text-gray-700'
+            }`}
+          >
+            {item.description}
+          </p>
+          <div className="pt-4">
+            <IconsThing table={item.techs} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
