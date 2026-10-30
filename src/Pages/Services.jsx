@@ -78,22 +78,31 @@ export default function Services({ lang }) {
           })}
         </div>
 
-        {/* Engagement levels */}
-        <h2 className={`font-[Aclonica] text-xl md:text-2xl text-center mt-20 mb-3 ${heading}`}>{s.tiersTitle}</h2>
-        <p className={`text-center text-sm mb-10 max-w-2xl mx-auto ${muted}`}>{s.tiersSubtitle}</p>
-        <div className="grid md:grid-cols-3 gap-6">
-          {s.tiers.map((tier, idx) => (
+        {/* Packages & pricing */}
+        <h2 className={`font-[Aclonica] text-xl md:text-2xl text-center mt-20 mb-3 ${heading}`}>{s.pricing.title}</h2>
+        <p className={`text-center text-sm mb-10 max-w-2xl mx-auto ${muted}`}>{s.pricing.subtitle}</p>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {s.pricing.tiers.map((tier, idx) => (
             <div
               key={tier.name}
-              className={`p-6 rounded-2xl border ${card} ${idx === 1 ? 'md:-translate-y-2 border-[#ff0000]/40 shadow-lg shadow-[#ff0000]/10' : ''}`}
+              className={`flex flex-col p-6 rounded-2xl border ${card} ${idx === 2 ? 'border-[#ff0000]/40 shadow-lg shadow-[#ff0000]/10' : ''}`}
             >
-              <div className="font-mono text-xs tracking-wider text-[#ff0000] uppercase mb-2">0{idx + 1}</div>
-              <h3 className={`font-[Aclonica] text-lg mb-2 ${heading}`}>{tier.name}</h3>
-              <p className={`text-sm mb-4 ${body}`}>{tier.text}</p>
-              <p className={`text-xs leading-relaxed ${muted}`}>{tier.examples}</p>
+              <h3 className={`font-[Aclonica] text-base leading-snug mb-3 lg:min-h-[4.2rem] ${heading}`}>{tier.name}</h3>
+              <div className="font-[Aclonica] text-2xl text-[#ff0000]">{tier.price}</div>
+              <div className={`text-xs mt-1 mb-4 ${muted}`}>{s.pricing.timeLabel}: {tier.time}</div>
+              <p className={`text-sm mb-4 ${body}`}>{tier.summary}</p>
+              <ul className="space-y-2 mb-4 flex-1">
+                {tier.includes.map((line) => (
+                  <li key={line} className={`flex items-start gap-2 text-xs leading-relaxed ${body}`}>
+                    <FaCheck className="text-[#ff0000] text-[10px] mt-1 shrink-0" /> {line}
+                  </li>
+                ))}
+              </ul>
+              <p className={`text-xs leading-relaxed pt-3 border-t ${muted} ${isDark ? 'border-white/10' : 'border-gray-200'}`}>{tier.note}</p>
             </div>
           ))}
         </div>
+        <p className={`text-center text-xs mt-6 ${muted}`}>{s.pricing.note}</p>
 
         {/* Process */}
         <h2 className={`font-[Aclonica] text-xl md:text-2xl text-center mt-20 mb-10 ${heading}`}>{s.processTitle}</h2>

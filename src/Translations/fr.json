@@ -18,7 +18,9 @@
     "subtitle": "TypeScript · React / Next.js · NestJS · Prisma · PostgreSQL · Docker",
     "cta": "Voir mes projets",
     "cta2": "Discutons",
-    "scroll": "Défiler"
+    "scroll": "Défiler",
+    "cv": "Télécharger le CV",
+    "cvFile": "/cv/Sabrina-Bessa-CV-FR.pdf"
   },
   "services": {
     "title": "Services",
@@ -76,25 +78,6 @@
         ]
       }
     },
-    "tiersTitle": "Trois façons de travailler ensemble",
-    "tiersSubtitle": "Chaque service existe en trois formats : vous ne payez que ce dont votre projet a réellement besoin.",
-    "tiers": [
-      {
-        "name": "Starter",
-        "text": "Une petite tâche clairement définie, livrée rapidement à prix fixe.",
-        "examples": "ex. une landing page, une page responsive, une intégration d'API, une correction de mise en page WordPress."
-      },
-      {
-        "name": "Standard",
-        "text": "Un livrable complet et bien défini, à prix fixe.",
-        "examples": "ex. un site vitrine multi-pages, une fonctionnalité React à partir d'une maquette, un petit module de tableau de bord."
-      },
-      {
-        "name": "Sur mesure",
-        "text": "Un projet plus important, qui commence par une phase de cadrage et se chiffre par étapes.",
-        "examples": "ex. une application métier full-stack, des intégrations complexes, une refonte avec migration."
-      }
-    ],
     "processTitle": "Ma méthode",
     "process": [
       {
@@ -114,13 +97,76 @@
         "text": "Nous vérifions ensemble le résultat selon les critères d'acceptation convenus, puis je le mets en ligne et vous accompagne."
       }
     ],
-    "cta": "Parlez-moi de votre projet"
+    "cta": "Parlez-moi de votre projet",
+    "pricing": {
+      "title": "Formules & tarifs",
+      "subtitle": "Des points de départ clairs pour les projets les plus courants. Au-delà, un devis sur mesure.",
+      "timeLabel": "Durée habituelle",
+      "note": "Tarifs indicatifs. Le prix final est convenu par écrit après étude de votre projet.",
+      "tiers": [
+        {
+          "name": "Correction de bug ou amélioration d'interface",
+          "price": "40–120 €",
+          "time": "2 à 6 heures",
+          "summary": "Une tâche délimitée sur un site ou une application existante.",
+          "includes": [
+            "Un problème clairement défini ou une petite amélioration",
+            "Analyse et mise en œuvre",
+            "Test de la fonctionnalité concernée",
+            "Un résumé concis des modifications"
+          ],
+          "note": "Si la cause est inconnue, je commence par un diagnostic, puis je confirme le prix."
+        },
+        {
+          "name": "Développement d'une fonctionnalité",
+          "price": "120–350 €",
+          "time": "1 à 3 jours ouvrés",
+          "summary": "Une fonctionnalité ajoutée à votre application React ou Next.js existante.",
+          "includes": [
+            "Une fonctionnalité, un composant ou un petit workflow convenu",
+            "Interface responsive",
+            "Intégration d'API si le point d'accès est disponible",
+            "États de chargement, d'erreur et vides",
+            "Tests de base et documentation de passation"
+          ],
+          "note": "État complexe, nouveaux endpoints backend et tests poussés sont estimés à part."
+        },
+        {
+          "name": "Site web ou module d'application",
+          "price": "300–800 €+",
+          "time": "4 à 10 jours ouvrés",
+          "summary": "Un site d'entreprise, ou une partie autonome d'une application.",
+          "includes": [
+            "Un ensemble de pages convenu ou un module autonome",
+            "Mises en page responsives et composants réutilisables",
+            "Formulaires, routage et intégration d'API selon le besoin",
+            "Métadonnées et SEO de base",
+            "Mise en ligne, tests et passation"
+          ],
+          "note": "Pour un périmètre modeste et bien défini. Les sites plus importants sont chiffrés en conséquence."
+        },
+        {
+          "name": "Projet sur mesure",
+          "price": "Sur devis",
+          "time": "Défini après le cadrage",
+          "summary": "Applications métier full-stack et tableaux de bord.",
+          "includes": [
+            "Phase de cadrage pour définir les besoins",
+            "Backend, base de données et frontend",
+            "Authentification et permissions complexes",
+            "Migrations en production",
+            "Livraison par étapes de paiement"
+          ],
+          "note": "Chiffré par étapes, comme les projets de l'ampleur de GestOrg."
+        }
+      ]
+    }
   },
   "about": {
     "title": "À propos",
     "bio": [
       "Développeuse full-stack avec une solide formation en mathématiques, cryptographie et logique — un bagage unique qui me permet de transformer des problèmes complexes en code propre et scalable. Autodidacte et curieuse, je fais le pont entre un design front-end créatif et une architecture back-end robuste.",
-      "Frontend : React, Next.js (App Router), TypeScript et TailwindCSS. Backend : Node.js, Express et NestJS — des API REST modulaires et typées, avec authentification JWT, gestion des rôles et documentation Swagger. Données : PostgreSQL avec Prisma ORM, MongoDB, et Redis pour le cache et les files d'attente. DevOps : services conteneurisés avec Docker, CI/CD avec GitHub Actions, serveurs Linux derrière Nginx, et déploiements sur Vercel. WordPress : plus de 50 sites réalisés pour des institutions gouvernementales.",
+      "Frontend : React, Next.js (App Router), TypeScript et TailwindCSS. Backend : Node.js, Express et NestJS — des API REST modulaires et typées, avec authentification JWT, gestion des rôles et documentation Swagger. Données : PostgreSQL avec Prisma ORM, MongoDB, et Redis pour le cache et les files d'attente. DevOps : services conteneurisés avec Docker, CI/CD avec GitHub Actions, serveurs Linux derrière Nginx, et déploiements sur Vercel. WordPress : plus de 50 sites réalisés pour les Conseils Locaux de l'Ordre des Architectes (CLOA), rattachés au conseil national (CNOA).",
       "Je ne me contente pas de construire des composants — je conçois des solutions complètes, du schéma de base de données à l'application déployée. Courante en anglais, français et arabe, je communique clairement avec des clients européens et internationaux. Indépendante, persévérante et passionnée, je transforme vos idées en applications web prêtes pour la production. Construisons ensemble quelque chose de grand !"
     ]
   },
@@ -145,7 +191,12 @@
       "success": "Merci ! Votre message a bien été envoyé. Je vous réponds très vite.",
       "error": "Désolée, le message n'a pas pu être envoyé. Réessayez ou écrivez-moi directement à"
     },
-    "footer": "Réalisé avec React & Tailwind"
+    "footer": "Réalisé avec React & Tailwind",
+    "whatsapp": {
+      "label": "WhatsApp",
+      "value": "Discuter avec moi",
+      "text": "Bonjour Sabrina, j'ai vu votre portfolio et j'aimerais parler d'un projet."
+    }
   },
   "projects": {
     "title": "Projets",
@@ -163,7 +214,8 @@
       "challenges": "Défis principaux",
       "gallery": "Captures d'écran",
       "ctaText": "Besoin d'une plateforme comme celle-ci pour votre organisation ?",
-      "cta": "Discutons"
+      "cta": "Discutons",
+      "visit": "Voir le site"
     },
     "projectItems": [
       {
@@ -385,14 +437,15 @@
               "text": "Les sections apparaissent avec Framer Motion une seule fois, lorsqu'elles entrent à l'écran, ce qui rend le site vivant sans nuire aux performances."
             }
           ]
-        }
+        },
+        "liveLink": "https://mbsgroupe.net/"
       },
       {
         "id": 6,
-        "title": "Plus de 50 sites gouvernementaux (WordPress)",
+        "title": "Plus de 50 sites CLOA (WordPress)",
         "images": [],
         "placeholder": "50+",
-        "description": "Plus de 50 sites WordPress réalisés pour des institutions gouvernementales : des sites officiels et responsives que le personnel non technique peut mettre à jour lui-même, livrés rapidement et de façon homogène.",
+        "description": "Plus de 50 sites WordPress pour les CLOA (Conseils Locaux de l'Ordre des Architectes), les conseils de wilaya de l'ordre national des architectes d'Algérie, le CNOA. Des sites officiels et responsives, construits sur une structure homogène.",
         "techs": [
           "WordPress",
           "PHP",
@@ -402,35 +455,35 @@
         "caseStudy": {
           "slug": "wordpress-gov",
           "eyebrow": "Étude de cas · WordPress à grande échelle",
-          "tagline": "Plus de 50 sites officiels pour des institutions publiques, construits sur WordPress afin que chaque organisation dispose d'un site professionnel que ses propres équipes peuvent tenir à jour.",
+          "tagline": "Plus de 50 sites officiels pour les conseils locaux de l'ordre des architectes d'Algérie, offrant au conseil de chaque wilaya sa propre présence web professionnelle sur WordPress.",
           "stats": [
             {
               "value": "50+",
               "label": "sites livrés"
             },
             {
-              "value": "Gov",
-              "label": "clients du secteur public"
+              "value": "1",
+              "label": "site par conseil local"
+            },
+            {
+              "value": "CNOA",
+              "label": "ordre national des architectes"
             },
             {
               "value": "CMS",
-              "label": "gérés par les équipes internes"
-            },
-            {
-              "value": "100%",
-              "label": "responsive"
+              "label": "construits sur WordPress"
             }
           ],
-          "context": "Les institutions gouvernementales ont besoin d'une présence web officielle pour publier actualités, annonces, documents et coordonnées. Chacune a besoin d'un site crédible et cohérent que ses équipes peuvent mettre à jour sans faire appel à un développeur.",
+          "context": "Le CNOA (Conseil National de l'Ordre des Architectes) est l'ordre national des architectes d'Algérie. Il s'organise en CLOA, des conseils locaux rattachés à chaque wilaya. Chaque conseil a besoin de sa propre présence web officielle pour publier actualités, annonces, documents et coordonnées à destination des architectes de sa wilaya, tout en restant clairement rattaché au même ordre national.",
           "role": "J'ai réalisé et livré les sites : installation de WordPress, conception et configuration des thèmes, structuration des contenus, et remise de sites que le personnel peut gérer en autonomie.",
           "features": [
             {
               "title": "Un design officiel et cohérent",
-              "text": "Un rendu professionnel adapté à l'identité de chaque institution, avec une structure homogène d'un site à l'autre."
+              "text": "Chaque site de conseil suit une structure homogène : le réseau se lit comme un seul ordre national, tandis que chaque wilaya garde son identité et ses contenus."
             },
             {
               "title": "Mises à jour faciles",
-              "text": "Le personnel publie actualités, annonces et pages depuis le tableau de bord WordPress, sans connaissances techniques."
+              "text": "Actualités, annonces et pages se publient depuis le tableau de bord WordPress, sans connaissances techniques."
             },
             {
               "title": "Responsive sur tous les écrans",
@@ -444,7 +497,7 @@
           "challenges": [
             {
               "title": "Livrer à grande échelle",
-              "text": "Réaliser plus de 50 sites impose de transformer la mise en place en un processus reproductible, pour que chaque nouvelle institution obtienne rapidement un site fiable et soigné."
+              "text": "Réaliser plus de 50 sites impose de transformer la mise en place en un processus reproductible, pour que chaque nouveau conseil obtienne rapidement un site fiable et soigné."
             },
             {
               "title": "Pensé pour des éditeurs non techniques",

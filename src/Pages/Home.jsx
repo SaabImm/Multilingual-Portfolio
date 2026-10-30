@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { FaArrowDown } from 'react-icons/fa';
+import { FaArrowDown, FaDownload } from 'react-icons/fa';
 import { useDarkMode } from '../Context/contexts';
 
 export default function Home({ lang }) {
@@ -86,6 +86,19 @@ export default function Home({ lang }) {
             >
               {lang.home.cta2}
             </a>
+            {lang.home.cvFile && (
+              <a
+                href={lang.home.cvFile}
+                download
+                className={`inline-flex items-center justify-center gap-2 px-8 py-3 text-sm font-semibold rounded-full transition-all duration-300 hover:scale-105 ${
+                  isDark
+                    ? 'text-gray-300 border border-gray-700 hover:bg-white/5 hover:border-[#ff0000]'
+                    : 'text-gray-700 border border-gray-300 hover:bg-gray-100 hover:border-[#cc0000]'
+                }`}
+              >
+                <FaDownload className="text-xs" /> {lang.home.cv}
+              </a>
+            )}
           </div>
 
           <div className="hidden md:flex absolute bottom-10 left-1/2 transform -translate-x-1/2 flex-col items-center gap-2 animate-bounce">

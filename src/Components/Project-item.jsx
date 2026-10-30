@@ -157,6 +157,18 @@ export default function ProjectItem({ item, lang }) {
           <div className="pt-4">
             <IconsThing table={item.techs} />
           </div>
+          {item.liveLink && (
+            <a
+              href={item.liveLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`inline-flex items-center gap-2 mt-2 mr-3 px-6 py-2.5 text-sm font-semibold rounded-full border transition-all hover:scale-105 hover:border-[#ff0000] ${
+                isDark ? 'text-gray-200 border-gray-700' : 'text-gray-700 border-gray-300'
+              }`}
+            >
+              <FaExternalLinkAlt className="text-xs" /> {lang.projects.caseStudyLabels.visit}
+            </a>
+          )}
           {item.caseStudy && (
             <a
               href={`#case-${item.caseStudy.slug}`}

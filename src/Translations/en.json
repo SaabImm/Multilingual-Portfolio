@@ -18,7 +18,9 @@
     "subtitle": "TypeScript · React / Next.js · NestJS · Prisma · PostgreSQL · Docker",
     "cta": "View My Work",
     "cta2": "Let's Talk",
-    "scroll": "Scroll"
+    "scroll": "Scroll",
+    "cv": "Download CV",
+    "cvFile": "/cv/Sabrina-Bessa-CV-EN.pdf"
   },
   "services": {
     "title": "Services",
@@ -76,25 +78,6 @@
         ]
       }
     },
-    "tiersTitle": "Three ways to work together",
-    "tiersSubtitle": "Every service comes in three sizes, so you only pay for what your project actually needs.",
-    "tiers": [
-      {
-        "name": "Starter",
-        "text": "A small, clearly defined task, delivered fast at a fixed price.",
-        "examples": "e.g. a landing page, one responsive page, a single API integration, a WordPress layout fix."
-      },
-      {
-        "name": "Standard",
-        "text": "A complete, well-defined deliverable at a fixed price.",
-        "examples": "e.g. a multi-page business website, a designed React feature, a small dashboard module."
-      },
-      {
-        "name": "Custom",
-        "text": "A larger project, starting with a discovery phase and quoted in milestones.",
-        "examples": "e.g. a full-stack business application, complex integrations, a redesign with migration."
-      }
-    ],
     "processTitle": "How I work",
     "process": [
       {
@@ -114,13 +97,76 @@
         "text": "We check the result together against the agreed acceptance criteria, then I deploy it and help you get started."
       }
     ],
-    "cta": "Tell me about your project"
+    "cta": "Tell me about your project",
+    "pricing": {
+      "title": "Packages & pricing",
+      "subtitle": "Clear starting points for the most common projects. Anything larger gets a tailored quote.",
+      "timeLabel": "Typical time",
+      "note": "Prices are indicative. The final price is agreed in writing once I've reviewed your project.",
+      "tiers": [
+        {
+          "name": "Bug Fix or UI Improvement",
+          "price": "€40–120",
+          "time": "2–6 hours",
+          "summary": "One bounded task in an existing website or application.",
+          "includes": [
+            "One clearly defined issue or small improvement",
+            "Investigation and implementation",
+            "Testing of the affected functionality",
+            "A concise summary of the changes"
+          ],
+          "note": "If the cause is unknown, I diagnose it first, then confirm the price."
+        },
+        {
+          "name": "Feature Implementation",
+          "price": "€120–350",
+          "time": "1–3 working days",
+          "summary": "A feature built into your existing React or Next.js application.",
+          "includes": [
+            "One agreed feature, component or small workflow",
+            "Responsive UI implementation",
+            "API integration if the endpoint is available",
+            "Loading, error and empty states",
+            "Basic tests and documented handover"
+          ],
+          "note": "Complex state, new backend endpoints and extensive testing are estimated separately."
+        },
+        {
+          "name": "Website or Application Module",
+          "price": "€300–800+",
+          "time": "4–10 working days",
+          "summary": "A business website, or a self-contained part of an application.",
+          "includes": [
+            "An agreed set of pages or a self-contained module",
+            "Responsive layouts and reusable components",
+            "Forms, routing and API integration as specified",
+            "Metadata and basic SEO",
+            "Deployment, testing and handover"
+          ],
+          "note": "For a modest, well-defined scope. Larger sites are quoted to match."
+        },
+        {
+          "name": "Custom Project",
+          "price": "On quote",
+          "time": "Agreed after discovery",
+          "summary": "Full-stack business applications and dashboards.",
+          "includes": [
+            "Discovery phase to define requirements",
+            "Backend, database and frontend",
+            "Complex authentication and permissions",
+            "Production migrations",
+            "Delivery in paid milestones"
+          ],
+          "note": "Quoted in milestones, the way GestOrg-scale projects are run."
+        }
+      ]
+    }
   },
   "about": {
     "title": "About Me",
     "bio": [
       "Full-stack developer with a unique foundation in mathematics, cryptography, and logic — skills that turn complex problems into clean, scalable code. Self-taught and relentlessly curious, I bridge creative front-end design and robust back-end architecture.",
-      "Frontend: React, Next.js (App Router), TypeScript and TailwindCSS. Backend: Node.js, Express and NestJS — modular, type-safe REST APIs with JWT authentication, role-based permissions and Swagger docs. Data: PostgreSQL with Prisma ORM, MongoDB, and Redis for caching and queues. DevOps: Dockerized services, CI/CD with GitHub Actions, Linux servers behind Nginx, and deployments on Vercel. WordPress: 50+ websites delivered for government institutions.",
+      "Frontend: React, Next.js (App Router), TypeScript and TailwindCSS. Backend: Node.js, Express and NestJS — modular, type-safe REST APIs with JWT authentication, role-based permissions and Swagger docs. Data: PostgreSQL with Prisma ORM, MongoDB, and Redis for caching and queues. DevOps: Dockerized services, CI/CD with GitHub Actions, Linux servers behind Nginx, and deployments on Vercel. WordPress: 50+ websites delivered for Algeria's local councils of architects (CLOA), part of the national order (CNOA).",
       "I don't just build components — I architect complete solutions, from the database schema to the deployed application. Fluent in English, French, and Arabic, I communicate clearly with European and international clients. Independent, persistent, and passionate about turning ideas into production-ready web applications. Let's build something great together."
     ]
   },
@@ -145,7 +191,12 @@
       "success": "Thank you! Your message has been sent. I'll get back to you soon.",
       "error": "Sorry, the message could not be sent. Please try again or email me directly at"
     },
-    "footer": "Built with React & Tailwind"
+    "footer": "Built with React & Tailwind",
+    "whatsapp": {
+      "label": "WhatsApp",
+      "value": "Chat with me",
+      "text": "Hello Sabrina, I found your portfolio and would like to discuss a project."
+    }
   },
   "projects": {
     "title": "Projects",
@@ -163,7 +214,8 @@
       "challenges": "Key challenges",
       "gallery": "Screenshots",
       "ctaText": "Need a platform like this for your organization?",
-      "cta": "Let's talk"
+      "cta": "Let's talk",
+      "visit": "Visit website"
     },
     "projectItems": [
       {
@@ -385,14 +437,15 @@
               "text": "Sections animate into view with Framer Motion only once, when they appear on screen, keeping the site lively without hurting performance."
             }
           ]
-        }
+        },
+        "liveLink": "https://mbsgroupe.net/"
       },
       {
         "id": 6,
-        "title": "50+ Government Websites (WordPress)",
+        "title": "50+ CLOA Websites (WordPress)",
         "images": [],
         "placeholder": "50+",
-        "description": "More than 50 WordPress websites built for government institutions: official, responsive sites that non-technical staff can update themselves, delivered quickly and consistently.",
+        "description": "More than 50 WordPress websites for the CLOA (Conseils Locaux de l'Ordre des Architectes), the wilaya-level councils of Algeria's national order of architects, the CNOA. Official, responsive sites built on a consistent structure.",
         "techs": [
           "WordPress",
           "PHP",
@@ -402,35 +455,35 @@
         "caseStudy": {
           "slug": "wordpress-gov",
           "eyebrow": "Case study · WordPress at scale",
-          "tagline": "Over 50 official websites for public institutions, built on WordPress so every organization gets a professional site its own staff can keep up to date.",
+          "tagline": "Over 50 official websites for the local councils of Algeria's national order of architects, giving each wilaya's council its own professional web presence on WordPress.",
           "stats": [
             {
               "value": "50+",
               "label": "websites delivered"
             },
             {
-              "value": "Gov",
-              "label": "public-sector clients"
+              "value": "1",
+              "label": "site per local council"
+            },
+            {
+              "value": "CNOA",
+              "label": "national order of architects"
             },
             {
               "value": "CMS",
-              "label": "managed by in-house staff"
-            },
-            {
-              "value": "100%",
-              "label": "responsive"
+              "label": "built on WordPress"
             }
           ],
-          "context": "Government institutions need an official web presence to publish news, announcements, documents and contact information. Each one needs a credible, consistent site that its own team can update without calling a developer.",
+          "context": "The CNOA (Conseil National de l'Ordre des Architectes) is Algeria's national order of architects. It is organized into CLOA, local councils attached to each wilaya. Each council needs its own official web presence to publish news, announcements, documents and contact information for the architects in its wilaya, while remaining recognizably part of the same national order.",
           "role": "I built and delivered the websites: setting up WordPress, designing and configuring the themes, structuring the content, and handing over sites that staff can manage on their own.",
           "features": [
             {
               "title": "Official, consistent design",
-              "text": "A professional look adapted to each institution's identity, with a consistent structure across sites."
+              "text": "Every council's site follows a consistent structure, so the network reads as one national order while each wilaya keeps its own identity and content."
             },
             {
               "title": "Easy content updates",
-              "text": "Staff publish news, announcements and pages from the WordPress dashboard, without technical knowledge."
+              "text": "News, announcements and pages are published from the WordPress dashboard, without technical knowledge."
             },
             {
               "title": "Responsive on every device",
@@ -444,7 +497,7 @@
           "challenges": [
             {
               "title": "Delivering at scale",
-              "text": "Building more than 50 sites means turning the setup into a repeatable process, so each new institution gets a reliable, polished site quickly."
+              "text": "Building more than 50 sites means turning the setup into a repeatable process, so each new council gets a reliable, polished site quickly."
             },
             {
               "title": "Built for non-technical editors",

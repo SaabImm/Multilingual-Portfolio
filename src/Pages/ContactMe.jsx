@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import { useDarkMode } from '../Context/contexts';
-import { FaGithubAlt, FaLinkedin, FaEnvelope, FaPhoneAlt, FaPaperPlane, FaCheckCircle, FaExclamationCircle } from "react-icons/fa";
+import { FaGithubAlt, FaLinkedin, FaEnvelope, FaPhoneAlt, FaWhatsapp, FaPaperPlane, FaCheckCircle, FaExclamationCircle } from "react-icons/fa";
 import { SiFiverr } from "react-icons/si";
 
 const EMAIL = "sabrinabessa754@gmail.com";
 const PHONE_DISPLAY = "+213 797 81 76 23";
 const PHONE_LINK = "tel:+213797817623";
+const WHATSAPP_NUMBER = "213797817623";
 // FormSubmit forwards submissions to EMAIL (no backend needed). The first
 // submission from the live site sends an activation email that must be confirmed once.
 const FORM_ENDPOINT = `https://formsubmit.co/ajax/${EMAIL}`;
@@ -150,6 +151,19 @@ export default function Contact({ lang }) {
               <div>
                 <div className={`text-xs ${muted}`}>{c.phoneLabel}</div>
                 <div className={`text-sm font-semibold ${heading} group-hover:text-[#ff0000]`}>{PHONE_DISPLAY}</div>
+              </div>
+            </a>
+
+            <a
+              href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(c.whatsapp.text)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`group flex items-center gap-4 p-5 rounded-2xl border transition-all duration-300 hover:-translate-y-1 hover:border-[#25d366]/50 ${card}`}
+            >
+              <div className="p-3 rounded-xl bg-[#25d366]/10 text-[#25d366]"><FaWhatsapp /></div>
+              <div>
+                <div className={`text-xs ${muted}`}>{c.whatsapp.label}</div>
+                <div className={`text-sm font-semibold ${heading} group-hover:text-[#25d366]`}>{c.whatsapp.value}</div>
               </div>
             </a>
 

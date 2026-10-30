@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useDarkMode } from '../Context/contexts';
 import IconsThing from './Icons';
-import { FaArrowLeft, FaTimes, FaCheckCircle, FaArrowRight } from 'react-icons/fa';
+import { FaArrowLeft, FaTimes, FaCheckCircle, FaArrowRight, FaExternalLinkAlt } from 'react-icons/fa';
 
 // Full-screen case study, opened via `#case-<slug>` so it can be linked directly.
 export default function CaseStudy({ item, lang, onClose }) {
@@ -57,6 +57,16 @@ export default function CaseStudy({ item, lang, onClose }) {
         <h1 className={`font-[Aclonica] text-3xl md:text-5xl leading-tight mb-6 ${heading}`}>{item.title}</h1>
         <p className={`text-base md:text-lg leading-relaxed max-w-3xl mb-8 ${body}`}>{cs.tagline}</p>
         <IconsThing table={item.techs} />
+        {item.liveLink && (
+          <a
+            href={item.liveLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 mt-6 px-6 py-2.5 text-sm font-semibold text-white bg-[#ff0000] rounded-full hover:bg-[#ff0000]/80 transition-all"
+          >
+            <FaExternalLinkAlt className="text-xs" /> {labels.visit}
+          </a>
+        )}
 
         {cs.stats && <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10">
           {cs.stats.map((s) => (
